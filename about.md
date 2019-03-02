@@ -4,12 +4,19 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Bio:
+
+I am currently a Junior Year Student majoring in Electronics and Communication at Indian Institute of Technology, Roorkee, India. I use signal processing and algorithms to solve problems. I am jack-of-all trades and master of some.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am always up to exchange ideas over a cup of coffee, so, if you are around, just ping me on [messenger](https://www.messenger.com/t/NiPruthi "Nipun Pruthi") or [twitter](https://twitter.com/nipunpruthi "Nipun Pruthi").
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+#### Address:
+Room No. F71<br/>
+Govind Bhawan<br/>
+IIT Roorkee<br/>
+
+[npruthi@ec.iitr.ac.in](mailto:npruthi@ec.iitr.ac.in)
