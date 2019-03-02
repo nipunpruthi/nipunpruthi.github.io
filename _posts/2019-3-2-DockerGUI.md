@@ -69,6 +69,3 @@ xeyes
 
 in docker container
 
-
-
-![Image not found]({{ site.baseurl }}/images/config.png)
