@@ -3,7 +3,7 @@ layout: post
 title: X(GUI) Forwarding on Docker Containers with Focus on GNU-Radio
 ---
 
-It's been some time since I am flown to heaven with Docker. No more critical break to my OS during experimentation with OSS(Open-Source-Software) repos. No more tinkering on how to fix the broken linux, which actually transformed me from n00b to expert of broken linux architecture. But still if you want to start a gui in docker, its not so straight forward and I am documenting my own approach here with focussing on my love [GNU-Radio](https://www.gnuradio.org/"GNU-Radio").
+It's been some time since I am flown to heaven with Docker. No more critical break to my OS during experimentation with OSS(Open-Source-Software) repos. No more tinkering on how to fix the broken linux, which actually transformed me from n00b to expert of broken linux architecture. But still if you want to start a gui in docker, its not so straight forward and the official [procedure](https://github.com/carlesfernandez/docker-pybombs-gnsssdr "Docker RF") on [GNSS website](https://gnss-sdr.org/) doesn't work because of the non-inclusion of x-server permission command. So, because of these motivation, I am documenting my own approach here with focussing on my love [GNU-Radio](https://www.gnuradio.org/"GNU-Radio").
 
 ## How Docker solve these problem:
 The description on the [Docker](https://www.docker.com/ "Docker") reads:
@@ -49,11 +49,11 @@ xhost -
 ```
 after you are done with your work, this will return the access control like before.
 
-Now, we have started the image. Subsequent steps are not length as to run the image.
+Now, we have started the image. Subsequent steps are not lengthy as to run the image.
 Using 
 > docker ps -a
 
-we can see the initialized container from our buit image(lets say 213lafl21l).
+we can see the the hash of initialized container from our buit image(lets say 213lafl21l).
 
 Now, next time, just start the container using 
 ```
@@ -68,4 +68,6 @@ xeyes
 ```
 
 in docker container
+
+![Couldn't fetch the procedure GIF](/images/ex.gif "X-Forward Docker Procedure")
 
