@@ -6,7 +6,9 @@ permalink: /about/
 
 ### Bio:
 
-I am currently a Junior Year Student majoring in Electronics and Communication at Indian Institute of Technology, Roorkee, India. I use signal processing and algorithms to solve problems. I am jack-of-all trades and master of some.
+I am currently a Junior Year Student majoring in Electronics and Communication at Indian Institute of Technology, Roorkee, India. 
+
+I tell computers how to process signals.
 
 ### More Information
 
