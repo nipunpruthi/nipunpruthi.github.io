@@ -14,6 +14,10 @@ I tell computers how to process signals.
 
 I am always up to exchange ideas over a cup of coffee, so, if you are around, just ping me on [messenger](https://www.messenger.com/t/NiPruthi "Nipun Pruthi") or [twitter](https://twitter.com/nipunpruthi "Nipun Pruthi").
 
+### Paper Poster
+
+["HaPT : Handover Prediction Using Temporal Data for Improved QoS in RAN"](https://github.com/nipunpruthi/nipunpruthi.github.io/blob/master/Paper/hapt.pdf) , APNet19(co-located with ACM Sigcomm](https://conferences.sigcomm.org/events/apnet2019/index.html)
+
 ### Contact me
 
 #### Address:
