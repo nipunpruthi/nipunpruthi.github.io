@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Bio:
 
-I am currently a Junior Year Student majoring in Electronics and Communication at Indian Institute of Technology, Roorkee, India. 
+I am currently a Senior Year Undergraduate majoring in Electronics and Communication at Indian Institute of Technology, Roorkee, India. 
 
 I tell computers how to process signals.
 
@@ -16,7 +16,7 @@ I am always up to exchange ideas over a cup of coffee, so, if you are around, ju
 
 ### Paper Poster
 
-["HaPT : Handover Prediction Using Temporal Data for Improved QoS in RAN"](https://nipunpruthi.github.io/Paper/hapt.pdf) , presented in [APNet19(co-located with ACM Sigcomm), Beijing](https://conferences.sigcomm.org/events/apnet2019/index.html)
+1. ["HaPT : Handover Prediction Using Temporal Data for Improved QoS in RAN"](https://nipunpruthi.github.io/Paper/hapt.pdf) , presented in [APNet19(co-located with ACM Sigcomm), Beijing](https://conferences.sigcomm.org/events/apnet2019/index.html)
 
 
 ### Contact me
