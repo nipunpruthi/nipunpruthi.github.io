@@ -21,7 +21,9 @@ I am always up to exchange ideas over a cup of coffee, so, if you are around, ju
 
 ### Images
 1. APNet19(co-located with ACM Sigcomm)
+
    I.  [Poster](https://nipunpruthi.github.io/images/Poster.jpg)
+
    II. [Student Volunteer](https://nipunpruthi.github.io/images/Volunteer.jpg)
 
 ### Contact me
