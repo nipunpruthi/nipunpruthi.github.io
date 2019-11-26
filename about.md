@@ -16,7 +16,7 @@ I am always up to exchange ideas over a cup of coffee, so, if you are around, ju
 
 ### Paper Poster
 
-1. ["HaPT : Handover Prediction Using Temporal Data for Improved QoS in RAN"](https://nipunpruthi.github.io/Paper/hapt.pdf) , presented in [APNet19(co-located with ACM Sigcomm), Beijing](https://conferences.sigcomm.org/events/apnet2019/index.html)
+1. ["HaPT : Handover Prediction Using Temporal Data for Improved QoS in RAN"](https://conferences.sigcomm.org/events/apnet2019/posters/4.pdf) , presented in [APNet19(co-located with ACM Sigcomm), Beijing](https://conferences.sigcomm.org/events/apnet2019/index.html)
 
 
 ### Images
