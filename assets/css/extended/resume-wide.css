@@ -1,0 +1,65 @@
+/* Custom CSS for wider resume layout */
+
+/* Make the main content area wider for resume page */
+body.resume-page .main {
+    max-width: 95% !important;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Adjust container width for resume page */
+body.resume-page .post-content {
+    max-width: none !important;
+    width: 100%;
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+    body.resume-page .main {
+        max-width: 100% !important;
+        padding: 0 1rem;
+    }
+}
+
+/* Make details/summary sections use full width */
+body.resume-page details {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Improve spacing for company icons and text */
+body.resume-page summary {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+/* Better typography for wider layout */
+body.resume-page h2, 
+body.resume-page h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Improve list spacing in wider layout */
+body.resume-page ul, 
+body.resume-page ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+/* Style for technology tags */
+body.resume-page code {
+    display: inline-block;
+    margin: 0.1rem 0.2rem;
+    padding: 0.2rem 0.4rem;
+    background-color: var(--theme);
+    border-radius: 3px;
+    font-size: 0.85em;
+}
+
+/* Dark mode adjustments */
+body.dark.resume-page code {
+    background-color: var(--border);
+}

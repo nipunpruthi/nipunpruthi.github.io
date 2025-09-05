@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Home on Your Name - Software Engineer</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Your Name - Software Engineer</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Feb 2024 14:20:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Optimization Techniques for Production</title>
+      <link>http://localhost:1313/posts/docker-optimization/</link>
+      <pubDate>Sat, 10 Feb 2024 14:20:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/docker-optimization/</guid>
+      <description>Essential Docker optimization techniques to reduce image size, improve performance, and enhance security in production environments.</description>
+    </item>
+    <item>
+      <title>Why Weekend Projects Are Essential (Even When They&#39;re Terrible)</title>
+      <link>http://localhost:1313/posts/weekend-projects/</link>
+      <pubDate>Mon, 05 Feb 2024 16:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/weekend-projects/</guid>
+      <description>A defense of weekend coding projects, failed experiments, and the beautiful mess of creative exploration.</description>
+    </item>
+    <item>
+      <title>Coffee, Code, and Life Balance</title>
+      <link>http://localhost:1313/posts/coffee-and-code/</link>
+      <pubDate>Thu, 25 Jan 2024 09:15:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/coffee-and-code/</guid>
+      <description>Musings on the relationship between coffee, coding, and finding balance in the life of a software engineer.</description>
+    </item>
+    <item>
+      <title>Building Scalable APIs with Go</title>
+      <link>http://localhost:1313/posts/my-first-tech-post/</link>
+      <pubDate>Mon, 15 Jan 2024 10:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-first-tech-post/</guid>
+      <description>Learn how to build fast and scalable APIs using Go, featuring best practices and real-world examples.</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
+&lt;p&gt;Hi there! 👋 I&amp;rsquo;m a passionate software engineer with a love for building scalable, efficient solutions that make a real impact.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;
+&lt;p&gt;I specialize in full-stack development with expertise in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backend Development&lt;/strong&gt;: Building robust APIs and microservices&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend Development&lt;/strong&gt;: Creating intuitive and responsive user interfaces&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cloud Technologies&lt;/strong&gt;: Deploying and scaling applications in the cloud&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt;: Automating deployment pipelines and infrastructure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;my-journey&#34;&gt;My Journey&lt;/h2&gt;
+&lt;p&gt;My journey in software engineering began with curiosity and has evolved into a passion for solving complex problems through code. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and best practices.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m always excited to connect with fellow developers, potential collaborators, and anyone interested in technology. Whether you want to discuss a project, share ideas, or just say hello, I&amp;rsquo;d love to hear from you!&lt;/p&gt;
+&lt;h2 id=&#34;-email&#34;&gt;📧 Email&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Primary&lt;/strong&gt;: &lt;a href=&#34;mailto:your.email@example.com&#34;&gt;your.email@example.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For quick questions, project inquiries, or just to say hi.&lt;/p&gt;
+&lt;h2 id=&#34;-social-media&#34;&gt;🌐 Social Media&lt;/h2&gt;
+&lt;h3 id=&#34;professional&#34;&gt;Professional&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;https://linkedin.com/in/yourusername&#34;&gt;linkedin.com/in/yourusername&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Professional updates and networking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/yourusername&#34;&gt;github.com/yourusername&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Check out my code and contributions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;social&#34;&gt;Social&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Twitter&lt;/strong&gt;: &lt;a href=&#34;https://twitter.com/yourusername&#34;&gt;@yourusername&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Tech thoughts and industry discussions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dev.to&lt;/strong&gt;: &lt;a href=&#34;https://dev.to/yourusername&#34;&gt;dev.to/yourusername&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical articles and tutorials&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-professional-inquiries&#34;&gt;💼 Professional Inquiries&lt;/h2&gt;
+&lt;h3 id=&#34;open-to-opportunities&#34;&gt;Open to Opportunities&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Full-time software engineering positions&lt;/li&gt;
+&lt;li&gt;Freelance and consulting projects&lt;/li&gt;
+&lt;li&gt;Technical mentoring and code reviews&lt;/li&gt;
+&lt;li&gt;Speaking at conferences or meetups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;collaboration-interests&#34;&gt;Collaboration Interests&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Open source projects&lt;/li&gt;
+&lt;li&gt;Technical writing and blogging&lt;/li&gt;
+&lt;li&gt;Hackathons and coding competitions&lt;/li&gt;
+&lt;li&gt;Technology research and development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-what-i-can-help-with&#34;&gt;🎯 What I Can Help With&lt;/h2&gt;
+&lt;h3 id=&#34;technical-expertise&#34;&gt;Technical Expertise&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Architecture &amp;amp; Design&lt;/strong&gt;: System design, API development, database design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code Review&lt;/strong&gt;: Best practices, performance optimization, security&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mentoring&lt;/strong&gt;: Career guidance, technical skills development&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consulting&lt;/strong&gt;: Technology selection, project planning, implementation strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;content-creation&#34;&gt;Content Creation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical blog posts and tutorials&lt;/li&gt;
+&lt;li&gt;Documentation and technical writing&lt;/li&gt;
+&lt;li&gt;Presentation development&lt;/li&gt;
+&lt;li&gt;Workshop and training materials&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-location--availability&#34;&gt;📍 Location &amp;amp; Availability&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Location&lt;/strong&gt;: [Your City, Country]
+&lt;strong&gt;Timezone&lt;/strong&gt;: [Your Timezone]
+&lt;strong&gt;Availability&lt;/strong&gt;: Generally available for calls between [Your Hours]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h1 id=&#34;my-projects&#34;&gt;My Projects&lt;/h1&gt;
+&lt;p&gt;Here&amp;rsquo;s a showcase of some projects I&amp;rsquo;ve worked on, ranging from personal experiments to production applications.&lt;/p&gt;
+&lt;h2 id=&#34;featured-projects&#34;&gt;Featured Projects&lt;/h2&gt;
+&lt;h3 id=&#34;-project-alpha---microservices-platform&#34;&gt;🚀 Project Alpha - Microservices Platform&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tech Stack&lt;/strong&gt;: Go, Docker, Kubernetes, PostgreSQL, Redis&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Project Alpha&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/project-alpha.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A scalable microservices platform that handles high-traffic loads with automatic scaling and monitoring.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key Features&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RESTful APIs with comprehensive documentation&lt;/li&gt;
+&lt;li&gt;Real-time data processing&lt;/li&gt;
+&lt;li&gt;Automated deployment pipeline&lt;/li&gt;
+&lt;li&gt;Comprehensive monitoring and alerting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Links&lt;/strong&gt;: &lt;a href=&#34;https://github.com/yourusername/project-alpha&#34;&gt;GitHub&lt;/a&gt; | &lt;a href=&#34;https://demo.example.com&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-modern-web-application&#34;&gt;🌐 Modern Web Application&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tech Stack&lt;/strong&gt;: React, TypeScript, Node.js, MongoDB&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resume</title>
+      <link>http://localhost:1313/resume/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/</guid>
+      <description>&lt;style&gt;
+/* Make the resume page use full width */
+.main {
+    max-width: 95% !important;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.post-content {
+    max-width: none !important;
+    width: 100%;
+}
+
+/* Better spacing for details/summary sections */
+details {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+summary {
+    padding: 1rem;
+    background-color: var(--code-bg);
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+}
+
+summary:hover {
+    background-color: var(--hljs-bg);
+}
+
+details[open] summary {
+    border-bottom: 1px solid var(--border);
+}
+
+details &gt; *:not(summary) {
+    padding: 1rem;
+}
+
+/* Technology tags styling */
+code {
+    display: inline-block;
+    margin: 0.1rem 0.2rem;
+    padding: 0.3rem 0.6rem;
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 600;
+    border: 1px solid #1d4ed8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main {
+        max-width: 100% !important;
+        padding: 0 1rem;
+    }
+    
+    details &gt; *:not(summary) {
+        padding: 0.75rem;
+    }
+    
+    summary {
+        padding: 0.75rem;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem;
+    }
+    
+    summary span:last-child {
+        font-size: 0.8em !important;
+        align-self: flex-end;
+    }
+}
+
+/* Company icon alignment */
+summary img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;
+&lt;p&gt;👨‍💻 &lt;strong&gt;Software Engineer&lt;/strong&gt; | ⏰ &lt;strong&gt;X+ Years Experience&lt;/strong&gt; | 📍 &lt;strong&gt;Location: Your City, Country&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,142 @@
+baseURL: 'https://your-domain.com'  # Update with your actual domain
+languageCode: 'en-us'
+title: 'Your Name - Software Engineer'  # Update with your actual name
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Google Analytics ID (optional)
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards
+  title: "Your Name"
+  description: "Software Engineer passionate about building scalable solutions"
+  keywords: [Blog, Portfolio, Software Engineer, Technology]
+  author: "Your Name"
+  
+  # Profile Mode
+  profileMode:
+    enabled: true
+    title: "Your Name"
+    subtitle: "Software Engineer"
+    imageUrl: "/images/profile.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Your Name"
+    buttons:
+      - name: About
+        url: /about
+      - name: Resume
+        url: /resume
+      - name: Projects
+        url: /projects
+      - name: Blog
+        url: /posts
+      - name: Contact
+        url: /contact
+
+  # Home page info mode (alternative to profile mode)
+  homeInfoParams:
+    Title: "Hi there! I'm a Software Engineer 👋"
+    Content: Welcome to my personal website where I share my journey in technology, projects, and thoughts.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/yourusername"
+    - name: linkedin
+      url: "https://linkedin.com/in/yourusername"
+    - name: email
+      url: "mailto:your.email@example.com"
+    - name: twitter
+      url: "https://twitter.com/yourusername"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  label:
+    text: "Your Name"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # Search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: resume
+      name: Resume
+      url: /resume/
+      weight: 15
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 30
+    - identifier: technical
+      name: Technical
+      url: /categories/technical/
+      weight: 35
+    - identifier: random
+      name: Random
+      url: /categories/random/
+      weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 60
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary for search
