@@ -1,6 +1,6 @@
-baseURL: 'https://your-domain.com'  # Update with your actual domain
+baseURL: 'https://nipunpruthi.github.io/my-portfolio'
 languageCode: 'en-us'
-title: 'Your Name - Software Engineer'  # Update with your actual name
+title: 'Nipun Pruthi - Software Engineer'
 theme: "PaperMod"
 
 enableRobotsTXT: true
