@@ -17,25 +17,27 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards
-  title: "Your Name"
+  title: "Nipun Pruthi"
   description: "Software Engineer passionate about building scalable solutions"
   keywords: [Blog, Portfolio, Software Engineer, Technology]
-  author: "Your Name"
+  author: "Nipun Pruthi"
   
   # Profile Mode
   profileMode:
     enabled: true
-    title: "Your Name"
+    title: "Nipun Pruthi"
     subtitle: "Software Engineer"
     imageUrl: "/images/profile.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: "Your Name"
+    imageTitle: "Nipun Pruthi"
     buttons:
       - name: About
         url: /about
       - name: Resume
         url: /resume
+      - name: Timeline
+        url: /timeline
       - name: Projects
         url: /projects
       - name: Blog
@@ -72,7 +74,7 @@ params:
     safari_pinned_tab: "/safari-pinned-tab.svg"
 
   label:
-    text: "Your Name"
+    text: "Nipun Pruthi"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -96,6 +98,10 @@ menu:
       name: Resume
       url: /resume/
       weight: 15
+    - identifier: timeline
+      name: Timeline
+      url: /timeline/
+      weight: 17
     - identifier: projects
       name: Projects
       url: /projects/
