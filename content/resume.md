@@ -130,7 +130,7 @@ summary img {
 
 <details>
 <summary style="display: flex; justify-content: space-between; align-items: center;">
-<span><img src="/images/ixigo-icon.png" alt="ixigo" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;"> <strong>Senior Software Engineer</strong> - <a href="https://www.ixigo.com"><em>ixigo.com</em></a> (Jan 2022 - Present)</span>
+<span><img src="/images/ixigo-icon.png" alt="ixigo" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;"> <strong>Senior Software Engineer</strong> - <em>ixigo.com</em> (Jan 2022 - Present)</span>
 <span style="font-size: 0.9em; color: var(--secondary);">📍 Gurugram, India (Remote)</span>
 </summary>
 
@@ -153,7 +153,7 @@ summary img {
 
 <details>
 <summary style="display: flex; justify-content: space-between; align-items: center;">
-<span><img src="/images/flipkart-icon.png" alt="Flipkart" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;"> <strong>Software Engineer</strong> - <a href="https://www.flipkart.com"><em>flipkart.com</em></a> (Jun 2020 - Dec 2021)</span>
+<span><img src="/images/flipkart-icon.png" alt="Flipkart" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;"> <strong>Software Engineer</strong> - <em>flipkart.com</em> (Jun 2020 - Dec 2021)</span>
 <span style="font-size: 0.9em; color: var(--secondary);">📍 Bangalore, India</span>
 </summary>
 
@@ -176,7 +176,7 @@ summary img {
 
 <details>
 <summary style="display: flex; justify-content: space-between; align-items: center;">
-<span><img src="/images/tide-icon.png" alt="Tide" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;"> <strong>Junior Software Developer</strong> - <a href="https://www.tide.co"><em>tide.co</em></a> (Sep 2018 - May 2020)</span>
+<span><img src="/images/tide-icon.png" alt="Tide" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;"> <strong>Junior Software Developer</strong> - <em>tide.co</em> (Sep 2018 - May 2020)</span>
 <span style="font-size: 0.9em; color: var(--secondary);">📍 London, UK (Remote)</span>
 </summary>
 
