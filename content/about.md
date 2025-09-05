@@ -71,3 +71,5 @@ Feel free to reach out if you're working on interesting backend challenges or ha
 ---
 
 *Building systems that scale, one microservice at a time.* 🚀
+
+{{< contact-footer >}}

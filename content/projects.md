@@ -119,3 +119,5 @@ I'm always open to interesting projects and collaborations. If you have an idea 
 - Innovative tech solutions
 - Learning new technologies
 - Mentoring and knowledge sharing
+
+{{< contact-footer >}}

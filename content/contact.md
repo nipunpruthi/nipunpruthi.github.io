@@ -92,3 +92,5 @@ Have an interesting project idea? Want to collaborate on open source? Looking fo
 ---
 
 *Looking forward to hearing from you! 🚀*
+
+{{< contact-footer >}}
