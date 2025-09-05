@@ -17,51 +17,59 @@ ShowPostNavLinks: false
 
 # About Me
 
-Hi there! 👋 I'm a passionate software engineer with a love for building scalable, efficient solutions that make a real impact.
+Hey, I'm **Nipun**! 👋
+
+I'm a backend engineer, skating enthusiast, and avid traveller. I've done my bachelors from **Indian Institute of Technology, Roorkee** and have been building distributed systems for 5+ years.
+
+Currently working as **Senior Software Engineer at [Ixigo](https://www.ixigo.com)**, India's largest Online Travel Agency (OTA) by user count, where I architect systems that handle millions of travel searches daily.
+
+Before Ixigo, I spent 2 years building scalable platforms at **[Flipkart](https://www.flipkart.com)** and **[Tide](https://www.tide.co)**, gaining experience across e-commerce and fintech domains.
+
+I'm always up for conversation over a cup of tea (green). ☕
 
 ## What I Do
 
-I specialize in full-stack development with expertise in:
+I specialize in **backend engineering** with a focus on:
 
-- **Backend Development**: Building robust APIs and microservices
-- **Frontend Development**: Creating intuitive and responsive user interfaces
-- **Cloud Technologies**: Deploying and scaling applications in the cloud
-- **DevOps**: Automating deployment pipelines and infrastructure
+- **Distributed Systems**: Designing resilient architectures that handle high-scale traffic
+- **API Development**: Building robust, performant APIs using Go and modern frameworks
+- **System Design**: Architecting scalable solutions for complex business problems
+- **Performance Optimization**: Making systems faster, more efficient, and cost-effective
 
 ## My Journey
 
-My journey in software engineering began with curiosity and has evolved into a passion for solving complex problems through code. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and best practices.
+My career has been focused on solving complex distributed systems challenges:
 
-## Technical Skills
+**At [Ixigo](https://www.ixigo.com)** - Building travel search infrastructure that processes 10M+ queries during peak seasons, optimizing for both speed and cost efficiency.
 
-### Programming Languages
-- **Primary**: Go, Python, JavaScript/TypeScript
-- **Also familiar with**: Java, Rust, C++
+**At [Flipkart](https://www.flipkart.com)** - Developed e-commerce platform features serving 100M+ monthly active users, focusing on seller onboarding and catalog management systems.
 
-### Frameworks & Technologies
-- **Backend**: Node.js, Express, Django, Gin, Echo
-- **Frontend**: React, Vue.js, HTML5, CSS3
-- **Databases**: PostgreSQL, MongoDB, Redis
-- **Cloud**: AWS, Google Cloud, Docker, Kubernetes
-- **Tools**: Git, CI/CD, Linux, Terraform
+**At [Tide](https://www.tide.co)** - Built financial technology solutions for SME banking, handling high-volume transaction processing and real-time payment systems.
 
-## Beyond Code
+**Core expertise**: Go, PostgreSQL, Kubernetes, AWS, and microservices architecture.
 
-When I'm not coding, you can find me:
+## Technical Philosophy
 
-- 📚 Reading tech blogs and staying updated with industry trends
-- 🏃‍♂️ Running or hiking in nature
-- 🎮 Playing strategy games
-- 🍳 Experimenting with new recipes in the kitchen
+I believe in:
+- **Simple, maintainable code** over clever complexity
+- **Data-driven decisions** backed by metrics and monitoring  
+- **Collaborative engineering** through mentoring and knowledge sharing
+- **Continuous learning** to stay ahead of evolving technologies
+
+## Beyond Engineering
+
+When I'm not architecting distributed systems:
+
+- 🛹 **Skating** through the streets and exploring new spots
+- ✈️ **Traveling** to discover new cultures and cuisines
+- 🍃 **Green tea sessions** while reading about tech and planning side projects
 
 ## Let's Connect
 
-I'm always interested in discussing technology, sharing knowledge, and exploring new opportunities. Feel free to reach out!
+Whether you want to discuss **distributed systems architecture**, **Go programming**, **system design patterns**, or just chat about the latest **skating spots** and **travel destinations** over green tea - I'm always up for a good conversation!
 
-- **Email**: [nipruthi@gmail.com](mailto:nipruthi@gmail.com)
-- **LinkedIn**: [linkedin.com/in/nipunpruthi](https://linkedin.com/in/nipunpruthi)
-- **GitHub**: [github.com/nipunpruthi](https://github.com/nipunpruthi)
+Feel free to reach out if you're working on interesting backend challenges or have opportunities in building scalable systems.
 
 ---
 
-*"The best way to predict the future is to invent it." - Alan Kay*
+*Building systems that scale, one microservice at a time.* 🚀
