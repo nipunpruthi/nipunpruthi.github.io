@@ -5,11 +5,13 @@
     max-width: 95% !important;
     margin: 0 auto;
     padding: 0 2rem;
+    min-height: 150vh !important; /* Ensure page is tall enough */
 }
 
 .timeline-page .post-content {
     max-width: none !important;
     width: 100%;
+    min-height: 150vh !important; /* Push footer down */
 }
 
 /* Ensure proper spacing on mobile */
@@ -23,12 +25,12 @@
 /* Timeline container styling */
 .timeline {
     position: relative;
-    max-width: none;
-    width: 100%;
+    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
-    padding: 6rem 0;
-    min-height: 100vh;
-    margin-bottom: 4rem; /* Space before footer */
+    padding: 6rem 0 12rem 0; /* Extra bottom padding to push footer down */
+    min-height: 150vh; /* Much taller than viewport */
+    margin-bottom: 8rem; /* Large space before footer */
 }
 
 
@@ -39,7 +41,7 @@
     width: 4px;
     background: linear-gradient(to bottom, #4f46e5, #3b82f6, #06b6d4, #10b981);
     top: 0;
-    height: 100%;
+    height: calc(100% + 4rem); /* Extend beyond container */
     left: 50%;
     margin-left: -2px;
     border-radius: 2px;
@@ -86,14 +88,14 @@
 .left::before {
     right: 50%;
     margin-right: -2px; /* Start from timeline center */
-    width: calc(50% - 40% - 1rem); /* Bridge the gap to left box */
+    width: calc(10% - 2rem); /* Proper bridge to left box */
 }
 
 /* Right side items - line goes from timeline center to right box edge */
 .right::before {
     left: 50%;
     margin-left: -2px; /* Start from timeline center */
-    width: calc(50% - 40% - 1rem); /* Bridge the gap to right box */
+    width: calc(10% - 2rem); /* Proper bridge to right box */
 }
 
 /* Color coding for different timeline stages */
