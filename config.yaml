@@ -36,8 +36,6 @@ params:
         url: /about
       - name: Resume
         url: /resume
-      - name: Timeline
-        url: /timeline
       - name: Projects
         url: /projects
       - name: Blog
@@ -98,10 +96,6 @@ menu:
       name: Resume
       url: /resume/
       weight: 15
-    - identifier: timeline
-      name: Timeline
-      url: /timeline/
-      weight: 17
     - identifier: projects
       name: Projects
       url: /projects/

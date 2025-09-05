@@ -99,7 +99,7 @@ Update the following in `config.yaml`:
 ```yaml
 params:
   profileMode:
-    title: "Your Name"
+    title: "Nipun Pruthi"
     subtitle: "Your Title"
     imageUrl: "images/your-profile.jpg"
   
@@ -115,7 +115,7 @@ params:
 ### Site Metadata
 ```yaml
 baseURL: 'https://your-domain.com'
-title: 'Your Name - Software Engineer'
+title: 'Nipun Pruthi - Software Engineer'
 ```
 
 ### Adding Images
