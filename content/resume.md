@@ -391,15 +391,15 @@ summary img {
 
 ## 📞 Contact
 
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="mailto:nipruthi@gmail.com" style="margin: 0 1.5rem; text-decoration: none;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail" width="32" height="32" style="filter: invert(0.15) sepia(1) saturate(7) hue-rotate(0deg); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+<div style="text-align: center; margin: 2rem 0; white-space: nowrap;">
+  <a href="mailto:nipruthi@gmail.com" style="display: inline-block; margin: 0 1.5rem; text-decoration: none;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail" width="32" height="32" style="filter: invert(0.15) sepia(1) saturate(7) hue-rotate(0deg); transition: transform 0.2s; vertical-align: middle;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
   </a>
-  <a href="https://linkedin.com/in/nipunpruthi" style="margin: 0 1.5rem; text-decoration: none;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" style="filter: invert(0.2) sepia(1) saturate(5) hue-rotate(200deg); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+  <a href="https://linkedin.com/in/nipunpruthi" style="display: inline-block; margin: 0 1.5rem; text-decoration: none;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" style="filter: invert(0.2) sepia(1) saturate(5) hue-rotate(200deg); transition: transform 0.2s; vertical-align: middle;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
   </a>
-  <a href="https://github.com/nipunpruthi" style="margin: 0 1.5rem; text-decoration: none;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(0.3); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+  <a href="https://github.com/nipunpruthi" style="display: inline-block; margin: 0 1.5rem; text-decoration: none;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(0.3); transition: transform 0.2s; vertical-align: middle;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
   </a>
 </div>
 
