@@ -29,6 +29,7 @@
     padding: 2rem 0;
 }
 
+
 /* Central timeline line */
 .timeline::after {
     content: '';
@@ -73,21 +74,22 @@
     height: 2px;
     background-color: #cbd5e1;
     top: 50%;
-    width: 120px;
     z-index: 1;
     transform: translateY(-50%);
 }
 
-/* Left side items - line goes left from timeline */
+/* Left side items - line goes from timeline to left box */
 .left::before {
     right: 50%;
     margin-right: 10px;
+    width: calc(10% - 10px);
 }
 
-/* Right side items - line goes right from timeline */
+/* Right side items - line goes from timeline to right box */
 .right::before {
     left: 50%;
     margin-left: 10px;
+    width: calc(10% - 10px);
 }
 
 /* Color coding for different timeline stages */
@@ -144,15 +146,21 @@
     to { box-shadow: 0 0 10px rgba(16, 185, 129, 0.8); }
 }
 
-/* Layout positioning */
+/* Layout positioning with 40% width constraint */
 .left {
-    padding-right: 10rem;
+    width: 40%;
+    padding-right: 2rem;
     text-align: right;
+    float: left;
+    clear: both;
 }
 
 .right {
-    padding-left: 10rem;
+    width: 40%;
+    padding-left: 2rem;
     text-align: left;
+    float: right;
+    clear: both;
 }
 
 /* Content box styling */
@@ -265,6 +273,8 @@
     }
     
     .left, .right {
+        width: 100%;
+        float: none;
         padding-left: 60px;
         padding-right: 20px;
         text-align: left;
