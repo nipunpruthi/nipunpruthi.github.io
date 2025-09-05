@@ -1,0 +1,26 @@
+/* Hyperlink styling for better visibility across the site */
+
+/* Light mode hyperlink styling */
+.post-content a,
+.main a {
+    color: #007acc !important;
+    text-decoration: none;
+}
+
+.post-content a:hover,
+.main a:hover {
+    color: #005a99 !important;
+    text-decoration: underline;
+}
+
+/* Dark mode hyperlink styling */
+body.dark .post-content a,
+body.dark .main a {
+    color: #6495ed !important;
+}
+
+body.dark .post-content a:hover,
+body.dark .main a:hover {
+    color: #87ceeb !important;
+    text-decoration: underline;
+}

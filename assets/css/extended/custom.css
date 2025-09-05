@@ -1,4 +1,4 @@
-/* Custom CSS for wider resume layout */
+/* Custom site-wide CSS for layout, navigation, and resume styles */
 
 /* Make the main content area wider for resume page */
 body.resume-page .main {
@@ -102,27 +102,3 @@ body.dark .profile .buttons a:hover {
     color: #6495ed !important;
 }
 
-/* Hyperlink styling for better visibility */
-.post-content a,
-.main a {
-    color: #007acc !important;
-    text-decoration: none;
-}
-
-.post-content a:hover,
-.main a:hover {
-    color: #005a99 !important;
-    text-decoration: underline;
-}
-
-/* Dark mode hyperlink styling */
-body.dark .post-content a,
-body.dark .main a {
-    color: #6495ed !important;
-}
-
-body.dark .post-content a:hover,
-body.dark .main a:hover {
-    color: #87ceeb !important;
-    text-decoration: underline;
-}
