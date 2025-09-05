@@ -135,6 +135,6 @@ Because in a world full of serious software solving serious problems, sometimes 
 
 ---
 
-*What's the most ridiculous project you've ever built? Or what's the most ridiculous project you've always wanted to build but never have? I'd love to hear about it! Drop me a line at [your.email@example.com](mailto:your.email@example.com) or share it on [Twitter](https://twitter.com/yourusername) with the hashtag #RidiculousProjects.*
+*What's the most ridiculous project you've ever built? Or what's the most ridiculous project you've always wanted to build but never have? I'd love to hear about it! Drop me a line at [nipruthi@gmail.com](mailto:nipruthi@gmail.com) or share it on [Twitter](https://twitter.com/nipunpruthi) with the hashtag #RidiculousProjects.*
 
 *P.S. - If you actually want to rate clouds, CloudRate is live at [cloudrate.example.com](https://cloudrate.example.com). Please don't judge the code. Actually, do judge it. It's hilariously bad.*

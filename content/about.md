@@ -58,9 +58,9 @@ When I'm not coding, you can find me:
 
 I'm always interested in discussing technology, sharing knowledge, and exploring new opportunities. Feel free to reach out!
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
-- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
+- **Email**: [nipruthi@gmail.com](mailto:nipruthi@gmail.com)
+- **LinkedIn**: [linkedin.com/in/nipunpruthi](https://linkedin.com/in/nipunpruthi)
+- **GitHub**: [github.com/nipunpruthi](https://github.com/nipunpruthi)
 
 ---
 

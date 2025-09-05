@@ -117,6 +117,6 @@ So here's to coffee, to code, and to finding balance in the chaos. Whether your 
 
 ---
 
-*What's your coding ritual? Do you have a special coffee setup, or are you more of a tea person? I'd love to hear about the small things that make your workday better. Drop me a line at [your.email@example.com](mailto:your.email@example.com) or find me on [Twitter](https://twitter.com/yourusername).*
+*What's your coding ritual? Do you have a special coffee setup, or are you more of a tea person? I'd love to hear about the small things that make your workday better. Drop me a line at [nipruthi@gmail.com](mailto:nipruthi@gmail.com) or find me on [Twitter](https://twitter.com/nipunpruthi).*
 
 *P.S. - If you're curious about the pour-over setup I mentioned, I'm happy to share more details. Fair warning: it's a rabbit hole, but a delicious one.*

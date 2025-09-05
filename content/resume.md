@@ -114,7 +114,7 @@ summary img {
 
 ---
 
-## 🎓 Educationcureysded
+## 🎓 Education
 
 <details>
 <summary style="display: flex; justify-content: space-between; align-items: center;">
@@ -389,6 +389,6 @@ summary img {
 
 ---
 
-**📧 Contact**: [your.email@example.com](mailto:your.email@example.com) | **📱 LinkedIn**: [/in/yourusername](https://linkedin.com/in/yourusername) | **💻 GitHub**: [/yourusername](https://github.com/yourusername)
+**📧 Contact**: [nipruthi@gmail.com](mailto:nipruthi@gmail.com) | **📱 LinkedIn**: [/in/nipunpruthi](https://linkedin.com/in/nipunpruthi) | **💻 GitHub**: [/nipunpruthi](https://github.com/nipunpruthi)
 
-**📄 [Download PDF Resume](mailto:your.email@example.com?subject=Resume%20Request)** | **🌐 [View Full Portfolio](/projects)**
+**📄 [Download PDF Resume](mailto:nipruthi@gmail.com?subject=Resume%20Request)** | **🌐 [View Full Portfolio](/projects)**

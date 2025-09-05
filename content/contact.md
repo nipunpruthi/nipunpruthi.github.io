@@ -20,22 +20,22 @@ ShowPostNavLinks: false
 I'm always excited to connect with fellow developers, potential collaborators, and anyone interested in technology. Whether you want to discuss a project, share ideas, or just say hello, I'd love to hear from you!
 
 ## 📧 Email
-**Primary**: [your.email@example.com](mailto:your.email@example.com)
+**Primary**: [nipruthi@gmail.com](mailto:nipruthi@gmail.com)
 
 For quick questions, project inquiries, or just to say hi.
 
 ## 🌐 Social Media
 
 ### Professional
-- **LinkedIn**: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
+- **LinkedIn**: [linkedin.com/in/nipunpruthi](https://linkedin.com/in/nipunpruthi)
   - Professional updates and networking
-- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
+- **GitHub**: [github.com/nipunpruthi](https://github.com/nipunpruthi)
   - Check out my code and contributions
 
 ### Social
-- **Twitter**: [@yourusername](https://twitter.com/yourusername)
+- **Twitter**: [@nipunpruthi](https://twitter.com/nipunpruthi)
   - Tech thoughts and industry discussions
-- **Dev.to**: [dev.to/yourusername](https://dev.to/yourusername)
+- **Dev.to**: [dev.to/nipunpruthi](https://dev.to/nipunpruthi)
   - Technical articles and tutorials
 
 ## 💼 Professional Inquiries
@@ -87,7 +87,7 @@ Have an interesting project idea? Want to collaborate on open source? Looking fo
 
 *Note: You can integrate a contact form here using services like Netlify Forms, Formspree, or similar*
 
-**Prefer a quick message?** Feel free to reach out directly via any of the channels above, or drop me a line at [your.email@example.com](mailto:your.email@example.com).
+**Prefer a quick message?** Feel free to reach out directly via any of the channels above, or drop me a line at [nipruthi@gmail.com](mailto:nipruthi@gmail.com).
 
 ---
 

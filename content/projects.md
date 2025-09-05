@@ -34,7 +34,7 @@ A scalable microservices platform that handles high-traffic loads with automatic
 - Automated deployment pipeline
 - Comprehensive monitoring and alerting
 
-**Links**: [GitHub](https://github.com/yourusername/project-alpha) | [Live Demo](https://demo.example.com)
+**Links**: [GitHub](https://github.com/nipunpruthi/project-alpha) | [Live Demo](https://demo.example.com)
 
 ---
 
@@ -51,7 +51,7 @@ A full-stack web application with modern UI/UX and real-time features.
 - User authentication and authorization
 - Progressive Web App (PWA) capabilities
 
-**Links**: [GitHub](https://github.com/yourusername/web-app) | [Live Demo](https://webapp.example.com)
+**Links**: [GitHub](https://github.com/nipunpruthi/web-app) | [Live Demo](https://webapp.example.com)
 
 ---
 
@@ -68,7 +68,7 @@ An interactive dashboard for data visualization and analytics.
 - Export functionality
 - Role-based access control
 
-**Links**: [GitHub](https://github.com/yourusername/analytics-dashboard)
+**Links**: [GitHub](https://github.com/nipunpruthi/analytics-dashboard)
 
 ---
 
@@ -85,7 +85,7 @@ A command-line tool that streamlines developer workflows.
 - Configuration management
 - Auto-update functionality
 
-**Links**: [GitHub](https://github.com/yourusername/dev-cli) | [Documentation](https://docs.example.com)
+**Links**: [GitHub](https://github.com/nipunpruthi/dev-cli) | [Documentation](https://docs.example.com)
 
 ## Open Source Contributions
 

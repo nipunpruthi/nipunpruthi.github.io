@@ -105,11 +105,11 @@ params:
   
   socialIcons:
     - name: github
-      url: "https://github.com/yourusername"
+      url: "https://github.com/nipunpruthi"
     - name: linkedin
-      url: "https://linkedin.com/in/yourusername"
+      url: "https://linkedin.com/in/nipunpruthi"
     - name: email
-      url: "mailto:your.email@example.com"
+      url: "mailto:nipruthi@gmail.com"
 ```
 
 ### Site Metadata

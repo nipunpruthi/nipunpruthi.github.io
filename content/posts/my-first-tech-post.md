@@ -258,4 +258,4 @@ In upcoming posts, I'll dive deeper into:
 
 ---
 
-*What's your experience with Go APIs? Let me know in the comments or reach out on [Twitter](https://twitter.com/yourusername)!*
+*What's your experience with Go APIs? Let me know in the comments or reach out on [Twitter](https://twitter.com/nipunpruthi)!*
