@@ -28,6 +28,7 @@
     margin: 0 auto;
     padding: 6rem 0;
     min-height: 100vh;
+    margin-bottom: 4rem; /* Space before footer */
 }
 
 
@@ -38,10 +39,11 @@
     width: 4px;
     background: linear-gradient(to bottom, #4f46e5, #3b82f6, #06b6d4, #10b981);
     top: 0;
-    bottom: 0;
+    height: 100%;
     left: 50%;
     margin-left: -2px;
     border-radius: 2px;
+    z-index: 1;
 }
 
 /* Timeline item container */
@@ -80,18 +82,18 @@
     transform: translateY(-50%);
 }
 
-/* Left side items - line goes from timeline to left box edge */
+/* Left side items - line goes from timeline center to left box edge */
 .left::before {
     right: 50%;
-    margin-right: 10px;
-    width: calc(10% + 2rem);
+    margin-right: -2px; /* Start from timeline center */
+    width: calc(50% - 40% - 1rem); /* Bridge the gap to left box */
 }
 
-/* Right side items - line goes from timeline to right box edge */
+/* Right side items - line goes from timeline center to right box edge */
 .right::before {
     left: 50%;
-    margin-left: 10px;
-    width: calc(10% + 2rem);
+    margin-left: -2px; /* Start from timeline center */
+    width: calc(50% - 40% - 1rem); /* Bridge the gap to right box */
 }
 
 /* Color coding for different timeline stages */
