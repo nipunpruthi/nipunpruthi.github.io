@@ -15,11 +15,9 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: false
 ---
 
-# About Me
-
 Hey, I'm **Nipun**! 👋
 
-I'm a backend engineer, skating enthusiast, and avid traveller. I've done my bachelors from **Indian Institute of Technology, Roorkee** and have been building distributed systems for 5+ years.
+I'm a backend engineer, skating enthusiast, and avid traveller. I've done my bachelors from **Indian Institute of Technology(IIT), Roorkee** and have been building distributed systems for 5+ years.
 
 Currently working as **Senior Software Engineer at [Ixigo](https://www.ixigo.com)**, India's largest Online Travel Agency (OTA) by user count, where I architect systems that handle millions of travel searches daily.
 
