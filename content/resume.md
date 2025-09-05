@@ -114,11 +114,11 @@ summary img {
 
 ---
 
-## 🎓 Education
+## 🎓 Educationcureysded
 
 <details>
 <summary style="display: flex; justify-content: space-between; align-items: center;">
-<span><strong>Bachelor of Engineering in Electronics & Communication</strong> - IIT Roorkee (2016-2020)</span>
+<span><img src="/images/iitr-icon.jpeg" alt="IIT Roorkee" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;"> <strong>Bachelor of Engineering in Electronics & Communication</strong> - IIT Roorkee (2016-2020)</span>
 <span style="font-size: 0.9em; color: var(--secondary);">📍 Roorkee, India</span>
 </summary>
 
