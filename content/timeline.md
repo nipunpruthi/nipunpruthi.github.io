@@ -22,17 +22,16 @@ params:
 # 🗓️ Career Timeline
 
 <style>
-/* Fallback CSS to ensure full width */
-body.timeline-page .main {
+/* Make the timeline page use full width */
+.main {
     max-width: 95% !important;
-    width: 95% !important;
-    margin: 0 auto !important;
-    padding: 0 2rem !important;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-body.timeline-page .post-content {
+.post-content {
     max-width: none !important;
-    width: 100% !important;
+    width: 100%;
 }
 </style>
 

@@ -1,32 +1,20 @@
 /* Custom CSS for wider timeline layout */
 
-/* Override any theme width restrictions */
-.timeline-page .container,
-.timeline-page .wrapper,
-.timeline-page .content {
-    max-width: none !important;
-    width: 100% !important;
-}
-
-/* Make the main content area wider for timeline page */
-body.timeline-page .main {
+/* Make the timeline page use full width like resume */
+.timeline-page .main {
     max-width: 95% !important;
-    width: 95% !important;
-    margin: 0 auto !important;
-    padding: 0 2rem !important;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-/* Adjust container width for timeline page */
-body.timeline-page .post-content {
+.timeline-page .post-content {
     max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: 100%;
 }
 
 /* Ensure proper spacing on mobile */
 @media (max-width: 768px) {
-    body.timeline-page .main {
+    .timeline-page .main {
         max-width: 100% !important;
         padding: 0 1rem;
     }
