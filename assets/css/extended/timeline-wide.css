@@ -26,7 +26,8 @@
     max-width: none;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 6rem 0;
+    min-height: 100vh;
 }
 
 
@@ -45,10 +46,11 @@
 
 /* Timeline item container */
 .timeline-item {
-    padding: 1rem 0;
+    padding: 8rem 0;
     position: relative;
     background-color: inherit;
     width: 100%;
+    min-height: 300px;
 }
 
 /* Timeline markers (dots on the line) */
@@ -78,18 +80,18 @@
     transform: translateY(-50%);
 }
 
-/* Left side items - line goes from timeline to left box */
+/* Left side items - line goes from timeline to left box edge */
 .left::before {
     right: 50%;
     margin-right: 10px;
-    width: calc(10% - 10px);
+    width: calc(10% + 2rem);
 }
 
-/* Right side items - line goes from timeline to right box */
+/* Right side items - line goes from timeline to right box edge */
 .right::before {
     left: 50%;
     margin-left: 10px;
-    width: calc(10% - 10px);
+    width: calc(10% + 2rem);
 }
 
 /* Color coding for different timeline stages */
@@ -165,13 +167,14 @@
 
 /* Content box styling */
 .timeline-content {
-    padding: 1.5rem;
+    padding: 2rem;
     background-color: white;
     position: relative;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-left: 4px solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem 0;
 }
 
 .timeline-content:hover {
