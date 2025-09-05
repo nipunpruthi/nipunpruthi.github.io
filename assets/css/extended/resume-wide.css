@@ -63,3 +63,41 @@ body.resume-page code {
 body.dark.resume-page code {
     background-color: var(--border);
 }
+
+/* Navigation menu hover effects */
+.header nav ul li a {
+    transition: all 0.3s ease !important;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.header nav ul li a:hover {
+    background-color: rgba(0, 122, 204, 0.1) !important;
+    color: #007acc !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 122, 204, 0.2);
+}
+
+/* Profile mode buttons hover effects */
+.profile .buttons a {
+    transition: all 0.3s ease !important;
+    border-radius: 6px;
+}
+
+.profile .buttons a:hover {
+    background-color: rgba(0, 122, 204, 0.1) !important;
+    color: #007acc !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 122, 204, 0.2);
+}
+
+/* Dark mode navigation hover */
+body.dark .header nav ul li a:hover {
+    background-color: rgba(100, 149, 237, 0.15) !important;
+    color: #6495ed !important;
+}
+
+body.dark .profile .buttons a:hover {
+    background-color: rgba(100, 149, 237, 0.15) !important;
+    color: #6495ed !important;
+}
