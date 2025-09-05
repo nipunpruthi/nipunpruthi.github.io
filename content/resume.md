@@ -389,6 +389,12 @@ summary img {
 
 ---
 
-**📧 Contact**: [nipruthi@gmail.com](mailto:nipruthi@gmail.com) | **📱 LinkedIn**: [/in/nipunpruthi](https://linkedin.com/in/nipunpruthi) | **💻 GitHub**: [/nipunpruthi](https://github.com/nipunpruthi)
+**📧 Contact**: [nipruthi@gmail.com](mailto:nipruthi@gmail.com)
 
-**📄 [Download PDF Resume](mailto:nipruthi@gmail.com?subject=Resume%20Request)** | **🌐 [View Full Portfolio](/projects)**
+**🔗 Connect**:  
+[<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px; filter: invert(0.2) sepia(1) saturate(5) hue-rotate(200deg);">LinkedIn](https://linkedin.com/in/nipunpruthi) | [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;">GitHub](https://github.com/nipunpruthi)
+
+---
+
+**📄 [Download PDF Resume](mailto:nipruthi@gmail.com?subject=Resume%20Request)**  
+**🌐 [View Full Portfolio](/projects)**
