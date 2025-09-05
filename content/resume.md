@@ -126,6 +126,115 @@ summary img {
 
 ---
 
+## 🗓️ Career Timeline
+
+<div style="margin: 2rem 0;">
+  <div style="position: relative; max-width: 100%; margin: 0 auto;">
+    
+    <!-- Timeline line -->
+    <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: linear-gradient(to bottom, #4f46e5, #06b6d4, #10b981); border-radius: 2px; z-index: 1;"></div>
+    
+    <!-- Timeline items -->
+    
+    <!-- Graduation -->
+    <div style="display: flex; align-items: center; margin: 2rem 0; position: relative;">
+      <div style="flex: 1; text-align: right; padding-right: 2rem;">
+        <div style="background: #f8fafc; border: 2px solid #4f46e5; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div style="font-weight: bold; color: #4f46e5; margin-bottom: 0.5rem;">🎓 Graduation</div>
+          <div style="font-size: 0.9em; color: #64748b;">B.E. Electronics & Communication</div>
+          <div style="font-size: 0.8em; color: #94a3b8;">IIT Roorkee</div>
+        </div>
+      </div>
+      <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 16px; height: 16px; background: #4f46e5; border: 4px solid white; border-radius: 50%; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>
+      <div style="flex: 1; text-align: left; padding-left: 2rem;">
+        <div style="font-weight: bold; color: #4f46e5;">2020</div>
+      </div>
+    </div>
+
+    <!-- Company 1 - Tide -->
+    <div style="display: flex; align-items: center; margin: 2rem 0; position: relative;">
+      <div style="flex: 1; text-align: right; padding-right: 2rem;">
+        <div style="font-weight: bold; color: #06b6d4;">2018-2020</div>
+      </div>
+      <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 16px; height: 16px; background: #06b6d4; border: 4px solid white; border-radius: 50%; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>
+      <div style="flex: 1; text-align: left; padding-left: 2rem;">
+        <div style="background: #f0f9ff; border: 2px solid #06b6d4; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div style="font-weight: bold; color: #06b6d4; margin-bottom: 0.5rem;">
+            <img src="/images/tide-icon.png" alt="Tide" width="16" height="16" style="display:inline-block; vertical-align:middle; margin-right:8px;">
+            💼 Junior Software Developer
+          </div>
+          <div style="font-size: 0.9em; color: #64748b;">tide.co</div>
+          <div style="font-size: 0.8em; color: #94a3b8;">2 years • Fintech</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Company 2 - Flipkart -->
+    <div style="display: flex; align-items: center; margin: 2rem 0; position: relative;">
+      <div style="flex: 1; text-align: right; padding-right: 2rem;">
+        <div style="background: #f0f9ff; border: 2px solid #3b82f6; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div style="font-weight: bold; color: #3b82f6; margin-bottom: 0.5rem;">
+            <img src="/images/flipkart-icon.png" alt="Flipkart" width="16" height="16" style="display:inline-block; vertical-align:middle; margin-right:8px;">
+            💻 Software Engineer
+          </div>
+          <div style="font-size: 0.9em; color: #64748b;">flipkart.com</div>
+          <div style="font-size: 0.8em; color: #94a3b8;">2 years • E-commerce</div>
+        </div>
+      </div>
+      <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 16px; height: 16px; background: #3b82f6; border: 4px solid white; border-radius: 50%; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>
+      <div style="flex: 1; text-align: left; padding-left: 2rem;">
+        <div style="font-weight: bold; color: #3b82f6;">2020-2022</div>
+      </div>
+    </div>
+
+    <!-- Company 3 - ixigo (Current) -->
+    <div style="display: flex; align-items: center; margin: 2rem 0; position: relative;">
+      <div style="flex: 1; text-align: right; padding-right: 2rem;">
+        <div style="font-weight: bold; color: #10b981;">2022-Present</div>
+      </div>
+      <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; background: #10b981; border: 4px solid white; border-radius: 50%; z-index: 2; box-shadow: 0 2px 8px rgba(16,185,129,0.4); animation: pulse 2s infinite;"></div>
+      <div style="flex: 1; text-align: left; padding-left: 2rem;">
+        <div style="background: #f0fdf4; border: 2px solid #10b981; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div style="font-weight: bold; color: #10b981; margin-bottom: 0.5rem;">
+            <img src="/images/ixigo-icon.png" alt="ixigo" width="16" height="16" style="display:inline-block; vertical-align:middle; margin-right:8px;">
+            🚀 Senior Software Engineer
+          </div>
+          <div style="font-size: 0.9em; color: #64748b;">ixigo.com</div>
+          <div style="font-size: 0.8em; color: #94a3b8;">Current • Travel Tech</div>
+          <div style="background: #10b981; color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 4px; display: inline-block; margin-top: 4px;">CURRENT</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+@keyframes pulse {
+  0% {
+    box-shadow: 0 2px 8px rgba(16,185,129,0.4);
+  }
+  50% {
+    box-shadow: 0 2px 16px rgba(16,185,129,0.8);
+  }
+  100% {
+    box-shadow: 0 2px 8px rgba(16,185,129,0.4);
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 0 1rem;
+  }
+  .timeline-container > div > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+</style>
+
+---
+
 ## 🏢 Professional Experience
 
 <details>
