@@ -389,12 +389,23 @@ summary img {
 
 ---
 
-**📧 Contact**: [nipruthi@gmail.com](mailto:nipruthi@gmail.com)
+## 📞 Contact
 
-**🔗 Connect**:  
-[<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px; filter: invert(0.2) sepia(1) saturate(5) hue-rotate(200deg);">LinkedIn](https://linkedin.com/in/nipunpruthi) | [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="20" height="20" style="display:inline-block; vertical-align:middle; margin-right:8px;">GitHub](https://github.com/nipunpruthi)
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="mailto:nipruthi@gmail.com" style="margin: 0 1.5rem; text-decoration: none;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail" width="32" height="32" style="filter: invert(0.15) sepia(1) saturate(7) hue-rotate(0deg); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+  </a>
+  <a href="https://linkedin.com/in/nipunpruthi" style="margin: 0 1.5rem; text-decoration: none;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" style="filter: invert(0.2) sepia(1) saturate(5) hue-rotate(200deg); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+  </a>
+  <a href="https://github.com/nipunpruthi" style="margin: 0 1.5rem; text-decoration: none;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(0.3); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+  </a>
+</div>
 
 ---
 
-**📄 [Download PDF Resume](mailto:nipruthi@gmail.com?subject=Resume%20Request)**  
-**🌐 [View Full Portfolio](/projects)**
+<div style="text-align: center; margin-top: 2rem;">
+  <p><strong>📄 <a href="mailto:nipruthi@gmail.com?subject=Resume%20Request">Download PDF Resume</a></strong></p>
+  <p><strong>🌐 <a href="/projects">View Full Portfolio</a></strong></p>
+</div>
