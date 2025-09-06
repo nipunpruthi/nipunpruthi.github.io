@@ -1,7 +1,7 @@
 baseURL: 'https://nipunpruthi.github.io'
 languageCode: 'en-us'
 title: 'Nipun Pruthi - Software Engineer'
-copyright: 'Nipun Pruthi Inc.'
+copyright: '&copy; 2025 <a href="/">Nipun Pruthi Inc.</a>'
 theme: "PaperMod"
 
 enableRobotsTXT: true
