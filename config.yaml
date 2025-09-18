@@ -22,6 +22,7 @@ params:
   description: "Software Engineer passionate about building scalable solutions"
   keywords: [Blog, Portfolio, Software Engineer, Technology]
   author: "Nipun Pruthi"
+  images: ["/images/profile.jpg"]
   
   # Profile Mode
   profileMode:
