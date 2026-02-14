@@ -1,0 +1,22 @@
+<script>
+(function() {
+  var root = document.documentElement;
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  function setLabel() {
+    var isDark = root.classList.contains('theme-dark');
+    btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  function applyTheme(theme) {
+    root.classList.remove('theme-dark', 'theme-light');
+    root.classList.add('theme-' + theme);
+    try { localStorage.setItem('theme', theme); } catch (e) {}
+    setLabel();
+  }
+  btn.addEventListener('click', function() {
+    var isDark = root.classList.contains('theme-dark');
+    applyTheme(isDark ? 'light' : 'dark');
+  });
+  setLabel();
+})();
+</script>
