@@ -1,12 +1,14 @@
 # Education (order: first = most recent)
+# Optional: school_url, icon, location, tech, details
 entries:
-  - degree: "B.Tech. in Computer Science"
-    institution: "Your University"
-    start: "2012"
-    end: "2016"
-    description: ""
-  - degree: "High School"
-    institution: "Your School"
-    start: "2010"
-    end: "2012"
-    description: ""
+  - degree: "B.Tech. in Electronics and Communication Engineering"
+    institution: "IIT Roorkee"
+    school_url: "https://www.iitr.ac.in"
+    location: "Roorkee, Uttarakhand, India"
+    icon: "img/schools/iitr.svg"
+    start: "2016"
+    end: "2020"
+    description: "random description"
+    tech: ["C", "Embedded Systems", "Signal Processing", "MATLAB"]
+    details: "testing details"
+

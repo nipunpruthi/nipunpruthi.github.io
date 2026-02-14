@@ -7,13 +7,39 @@
   {{ end }}
   <ol class="timeline">
     {{ range .Site.Data.experience.entries }}
+    {{ $e := . }}
     <li class="timeline-item">
       <span class="timeline-marker" aria-hidden="true"></span>
       <div class="timeline-content">
-        <div class="timeline-period">{{ .start }} — {{ .end }}</div>
-        <h2 class="timeline-role">{{ .role }}{{ with .company }} <span class="timeline-company">@ {{ . }}</span>{{ end }}</h2>
-        {{ with .description }}
-        <p class="timeline-description">{{ . }}</p>
+        <div class="timeline-head-row">
+          <div class="timeline-head-left">
+            {{ with $e.icon }}
+            <div class="timeline-company-icon-wrap">
+              <img class="timeline-company-icon" src="{{ . | relURL }}" alt="" loading="lazy">
+            </div>
+            {{ end }}
+            <h2 class="timeline-role">
+              {{ $e.role }}{{ with $e.company }} @ {{ if $e.company_url }}<a href="{{ $e.company_url }}" target="_blank" rel="noopener" class="timeline-company-link">{{ $e.company }}</a>{{ else }}<span class="timeline-company">{{ $e.company }}</span>{{ end }}{{ end }}
+            </h2>
+          </div>
+          <div class="timeline-period">{{ $e.start }} — {{ $e.end }}</div>
+        </div>
+        {{ if or $e.description $e.location }}
+        <div class="timeline-meta-row">
+          {{ with $e.description }}<p class="timeline-description">{{ . }}</p>{{ end }}
+          {{ with $e.location }}<span class="timeline-location"><span class="timeline-location-icon">{{ partial "icon-pin.html" $ }}</span>{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+        {{ with $e.tech }}
+        <div class="timeline-tech">
+          {{ range . }}<span class="timeline-tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+        {{ with $e.details }}
+        <details class="timeline-details">
+          <summary class="timeline-details-summary">More</summary>
+          <div class="timeline-details-content">{{ . | markdownify }}</div>
+        </details>
         {{ end }}
       </div>
     </li>
