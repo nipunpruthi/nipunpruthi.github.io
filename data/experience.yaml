@@ -8,19 +8,50 @@ entries:
     icon: "img/companies/ixigo.png"
     start: "August '24"
     end: "Present"
-    description: "Designed Coupon Management System backend. Leading initiatives from 0 to 1."
-    details: "Owned design and delivery of the coupon management backend; collaborated with product and infra on rollout. Improved redemption reliability and observability."
-    tech: ["Java", "Spring Boot", "PostgreSQL", "Redis", "Kafka", "AWS"]
+    description: "Designed and built systems end-to-end: MoneyOS (coupon lifecycle platform) and Ixi-Sense (clickstream & cohort). Service owner for high-throughput coupon engine and real-time personalisation; leads cross-functional delivery."
+    tech: ["Java", "Spring Boot", "MySQL", "PostgreSQL", "Redis", "Kafka", "AWS", "ClickHouse", "Kubernetes", "JDBI", "Flyway", "Prometheus", "Resilience4j"]
+    more:
+      - name: "MoneyOS — Coupon Lifecycle Platform"
+        details:
+          - "Impact: 20M+ daily requests across Hotels, Trains & Flights; 10–15% lift in Search-to-Booking conversion. Campaign time-to-market improved by 80%."
+          - "Impact: Safeguards 100+ live campaigns during deployments with safe rollback; zero-downtime releases with full redemption lineage for analytics."
+          - "Fully configurable coupon management system: rules, reward types, and campaign behaviour driven by config—future-ready for new products and offers without code changes."
+          - "Service owner end-to-end: apply/claim lifecycle, UI APIs for coupon and payment-offer management. Led cross-functional pod; scaled for flash-sale and peak loads."
+          - "Tech: Java, Spring Boot, MySQL, Redis, Kafka, Kubernetes."
+      - name: "Ixi-Sense — Clickstream & Cohort Management"
+        details:
+          - "Impact: Powers real-time personalisation for 3 consumer lines of Business (ixigo, AbhiBus, ConfirmTkt). In-house alternative to third-party cohort/clickstream tooling; full control over schema and rules."
+          - "Impact: Enables product and growth teams to define and update cohorts and rules without code changes."
+          - "Designed and built from scratch: first-party clickstream ingestion, dynamic rule-based cohort engine (AND/OR rule DSL, polymorphic model, flow-based validation), and low-latency APIs for personalisation."
+          - "Built end-to-end clickstream pipeline: ingestion from ClickHouse, schema sync (upsert/merge), UI metadata APIs for dropdowns and rule-building."
+          - "Performance: virtual threads for parallel schema fetch and background merge-sync; bulk upserts (PostgreSQL ON CONFLICT) for high-volume key sync."
+          - "Tech: Spring Boot 3, JDBI (no ORM), Flyway, Feign, Actuator/Prometheus; Spotless and test coverage."
   - role: "Senior Software Engineer"
     company: "www.Tide.co"
     company_url: "https://www.tide.co"
-    location: "London, UK(Remote)"
+    location: "London, UK (Remote)"
     icon: "img/companies/tide.png"
     start: "September '23"
     end: "April '24"
-    description: "Distributed systems and APIs. Scaled services for growth."
-    details: "Worked on core banking and payment flows; contributed to event-driven services and API contracts. Participated in on-call and incident response."
-    tech: ["Java", "Kotlin", "Spring", "Kafka", "Kubernetes", "GCP"]
+    description: "Backend ownership of payment integrations and reconciliation. Shipped features that improved reliability and cut manual ops; led documentation for legacy services."
+    tech: ["Java", "Spring Boot", "PostgreSQL", "ScyllaDB", "Redis", "Kubernetes", "Docker", "Kafka", "Autorek", "IntelliJ"]
+    more:
+      - name: "Cashfree Payments Adapter"
+        details:
+          - "Impact: Prevented production downtime during upstream settlement failures; real-time pool balance visibility enabled ops to keep 5L+ customers unaffected."
+          - "Impact: Improved overall app robustness when instant-funds-settlement broke."
+          - "Service owner and maintainer; streamlined Add Funds flow and built pool-account-balance visibility at M2P (licensed wallet entity)."
+          - "Tech: PostgreSQL, Java, Spring Boot, Kubernetes, Docker."
+      - name: "Reconciliation Service"
+        details:
+          - "Impact: Cut developer intervention to ~10% weekly; saved 20+ hours per week across the team."
+          - "Impact: Reduced manual reconciliation work for ops and dev; discrepancies handled autonomously."
+          - "Designed and maintained autonomous reconciliation between local wallet DB and M2P; added agent APIs for ad-hoc runs."
+          - "Tech: Autorek, PostgreSQL, Java Spring, Kubernetes."
+      - name: "Legacy code and services documentation"
+        details:
+          - "Impact: Smoother knowledge transfer and faster onboarding for new team members."
+          - "Documented legacy payments service, wallet-payments-adapter and payment-gateway-adapter."
   - role: "Software Engineer"
     company: "Flipkart.com"
     company_url: "https://www.flipkart.com"
@@ -28,9 +59,31 @@ entries:
     icon: "img/companies/flipkart.jpeg"
     start: "May '21"
     end: "September '23"
-    description: "Backend and system design. Scaled services for Retail."
-    details: "Built and maintained services for retail catalog and inventory; optimised for high traffic and low latency. Worked with cross-functional teams on design reviews."
-    tech: ["Java", "Spring", "Cassandra", "Elasticsearch", "Kafka"]
+    description: "Designed and owned backend services for catalog compliance and inventory visibility. Shipped policy and legal-metrology flows; built systems that prevented non-compliant sales and surfaced non-live inventory. Drove NFR and load testing for BBD."
+    tech: ["Java", "Dropwizard", "Spring", "Kafka", "MySQL", "MongoDB", "HBase", "Python", "Locust"]
+    more:
+      - name: "Policy Master"
+        details:
+          - "Impact: Prevented non-compliant products worth ₹500Cr from being sold, avoiding legal exposure."
+          - "Service owner: designed HLD/LLD and implemented from scratch to manage products with expired licenses."
+          - "Tech: Kafka, MySQL, Java Dropwizard."
+      - name: "Legal Metrology"
+        details:
+          - "Impact: Made Flipkart’s product portfolio legally compliant per new government guidelines (country of origin, importer/manufacturing address)."
+          - "Contributor and maintainer; designed and implemented backend flow for Legal Metrology data for sellers."
+          - "Tech: MongoDB, MySQL, Kafka, Java Dropwizard."
+      - name: "Non-Live Products Dashboard"
+        details:
+          - "Impact: Surfaced ~₹3Cr/month of offline warehouse inventory to go live instead of expiring or sitting idle."
+          - "Component owner: designed and implemented service from scratch showing inventory in warehouse but not on Flipkart."
+          - "Tech: Java Spring, HBase, MySQL."
+      - name: "Big Billion Day (BBD) preparation"
+        details:
+          - "Impact: Supported BBD’21 crossing ₹20K Cr in sales via reliable, load-tested critical APIs."
+          - "Automated NFR and load testing of critical APIs before BBD; used Python, Locust, Java."
+      - name: "Reliability and operations"
+        details:
+          - "Drove KTLO discussions and system improvements; resolved production issues during on-call."
   - role: "Software Engineer"
     company: "Texas Instruments"
     company_url: "https://www.ti.com"
@@ -41,11 +94,6 @@ entries:
     description: "Embedded systems and software development."
     # details: " Hdjalf"
     more:
-      - name: "Embedded platform firmware & tooling"
-        details:
-          - "Developed firmware and tooling for embedded platforms."
-          - "Wrote tests and documentation."
-          - "Collaborated with hardware teams on validation."
       - name: "Embedded platform firmware & tooling"
         details:
           - "Developed firmware and tooling for embedded platforms."

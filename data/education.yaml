@@ -8,7 +8,7 @@ entries:
     icon: "img/schools/iitr.svg"
     start: "2016"
     end: "2020"
-    description: "random description"
-    tech: ["C", "Embedded Systems", "Signal Processing", "MATLAB"]
-    details: "testing details"
+    description: "Foundation in Computer Science, data structures, and Electronics Engineering."
+    tech: ["Java", "C++", "Python", "SQL", "Embedded Systems", "MATLAB"]
+    # details: ""
 

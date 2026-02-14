@@ -1,0 +1,29 @@
+{{ with .Site.Data.publications.entries }}
+<section class="home-section home-publications" id="publications">
+  <h2 class="home-section-title">Publications</h2>
+  <ol class="timeline publications-timeline">
+    {{ range . }}
+    {{ $p := . }}
+    <li class="timeline-item">
+      <span class="timeline-marker" aria-hidden="true"></span>
+      <div class="timeline-content">
+        <div class="timeline-head-row">
+          <div class="timeline-head-left">
+            <h3 class="timeline-role">
+              {{ if $p.url }}<a href="{{ $p.url }}" target="_blank" rel="noopener" class="timeline-company-link">{{ $p.title }}</a>{{ else }}<span class="timeline-company">{{ $p.title }}</span>{{ end }}
+            </h3>
+          </div>
+          {{ with $p.date }}<div class="timeline-period">{{ . }}</div>{{ end }}
+        </div>
+        {{ if or $p.conference $p.location }}
+        <div class="timeline-meta-row">
+          {{ with $p.conference }}<span class="timeline-publication-venue">{{ . }}</span>{{ end }}
+          {{ with $p.location }}<span class="timeline-location"><span class="timeline-location-icon">{{ partial "icon-pin.html" $ }}</span>{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+</section>
+{{ end }}

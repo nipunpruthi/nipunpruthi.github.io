@@ -132,6 +132,7 @@ details[open] .timeline-details-summary::before { content: "▲ "; }
 .about-email { margin: 1.5rem 0 0.5rem; font-size: 0.9375rem; color: var(--text-muted); }
 .about-email a { color: var(--link); text-decoration: none; }
 .about-email a:hover { text-decoration: underline; }
+.timeline-publication-venue { font-size: 0.9375rem; color: var(--text-muted); }
 .about-page .connect-section { margin-top: 2rem; }
 
 /* Blog list and single */
