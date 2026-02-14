@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <script>
+      (function() {
+        var stored = localStorage.getItem('theme');
+        var theme = (stored === 'light' || stored === 'dark') ? stored : 'dark';
+        document.documentElement.classList.add('theme-' + theme);
+      })();
+    </script>
     {{ partial "head.html" . }}
   </head>
   <body>
@@ -12,5 +19,6 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ partial "theme-toggle-script.html" . }}
   </body>
 </html>
