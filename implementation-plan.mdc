@@ -1,0 +1,38 @@
+# Implementation Plan – Hugo Personal Site (GitHub Pages)
+
+Track progress: one feature at a time, test, then next. Mark steps with [Done] and a short summary.
+
+---
+
+## 1. Scaffold Hugo site + GitHub Pages config
+- [Done] Site structure created manually (no `hugo new site` required): hugo.toml, archetypes, content sections, layouts (baseof, partials head/nav/footer), default list/single, static/css, .gitignore.
+- [Done] GitHub Pages: baseURL set to https://nipunpruthi.github.io/, publishDir = public; .github/workflows/hugo.yml added to build and deploy on push to main.
+
+---
+
+## 2. Landing page
+- [Done] Hero with greeting and tagline; greeting/tagline from site params (hugo.toml) with optional page override in content/_index.md. CSS: hero-greeting (large, bold), hero-tagline (accent color, italic).
+
+## 3. About me page
+- [Done] layouts/section/about.html: title + body content; optional front matter `image` for profile photo (two-column on larger screens). content/about/_index.md has placeholder bio.
+
+## 4. Experience page
+- [Done] Timeline: data/experience.yaml (entries: role, company, start, end, description). layouts/section/experience.html renders timeline; CSS vertical line + markers + period/role/description.
+
+## 5. Blogs section
+- [Done] layouts/section/blog.html (list with date, tags, summary); layouts/blog/single.html (date, tags, content). Sample posts in content/blog/ with tags. README.md added with commands, structure, profile image, experience, blog, deploy.
+
+## 6. Blogs: tags + filter by tags
+- [ ] Taxonomy, tag list page, filter UI
+
+## 7. Blogs: search
+- [ ] Client-side or simple search
+
+## 8. Papershelf page
+- [ ] Section, layout, content
+
+## 9. Photos page
+- [ ] Gallery section and layout
+
+## 10. Polish & deploy
+- [ ] Nav links, RSS, GitHub Actions

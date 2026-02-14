@@ -1,0 +1,7 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<section class="hero">
+  <h1 class="hero-greeting">{{ .Param "greeting" | default .Site.Params.greeting | default "Hey" }}</h1>
+  <p class="hero-tagline">{{ .Param "tagline" | default .Site.Params.tagline | default "Software engineer" }}</p>
+</section>
+{{ end }}

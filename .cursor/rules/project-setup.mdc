@@ -1,0 +1,12 @@
+---
+description: Hugo personal site for GitHub Pages - structure and conventions
+alwaysApply: true
+---
+
+# Project: Hugo Personal Site (GitHub Pages)
+
+- **Stack**: Hugo (static site), content in Markdown, deployed to GitHub Pages.
+- **Sections**: home, about, experience, blog, papershelf, photos.
+- **Code standards**: One concern per partial/layout; reuse partials (head, nav, footer); no inline scripts in content; use Hugo config for baseURL and menus.
+- **Content**: All editable content in `content/`; structure in `layouts/` and `themes` or `layouts` only for custom theme.
+- **Deploy**: Build output in `public/` (or configured publishDir); GitHub Actions or `gh-pages` branch.

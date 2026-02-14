@@ -1,0 +1,23 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="page experience-page">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}
+  <div class="experience-intro">{{ . }}</div>
+  {{ end }}
+  <ol class="timeline">
+    {{ range .Site.Data.experience.entries }}
+    <li class="timeline-item">
+      <span class="timeline-marker" aria-hidden="true"></span>
+      <div class="timeline-content">
+        <div class="timeline-period">{{ .start }} — {{ .end }}</div>
+        <h2 class="timeline-role">{{ .role }}{{ with .company }} <span class="timeline-company">@ {{ . }}</span>{{ end }}</h2>
+        {{ with .description }}
+        <p class="timeline-description">{{ . }}</p>
+        {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+</article>
+{{ end }}

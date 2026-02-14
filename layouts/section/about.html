@@ -1,0 +1,16 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="page about-page">
+  <h1>{{ .Title }}</h1>
+  <div class="about-layout">
+    <div class="about-body">
+      {{ .Content }}
+    </div>
+    {{ with .Param "image" }}
+    <div class="about-image-wrap">
+      <img class="about-image" src="{{ . | relURL }}" alt="" loading="lazy">
+    </div>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

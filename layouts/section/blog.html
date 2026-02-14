@@ -1,0 +1,29 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="page blog-list-page">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}
+  <div class="blog-intro">{{ . }}</div>
+  {{ end }}
+  <ul class="post-list">
+    {{ range .Pages }}
+    <li class="post-item">
+      <a href="{{ .RelPermalink }}" class="post-link">{{ .Title }}</a>
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+        {{ with .Param "tags" }}
+        <span class="post-tags">
+          {{ range . }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+        </span>
+        {{ end }}
+      </div>
+      {{ with .Summary }}
+      <p class="post-summary">{{ . }}</p>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}
