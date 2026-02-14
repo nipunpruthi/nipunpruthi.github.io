@@ -74,6 +74,8 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .social-icon-svg { width: 1.5rem; height: 1.5rem; display: block; }
 
 .site-footer { border-top: 1px solid var(--border); padding: 1rem 2rem; text-align: center; color: var(--text-muted); font-size: 0.875rem; }
+.site-footer a.footer-back-to-top { color: var(--link); text-decoration: none; }
+.site-footer a.footer-back-to-top:hover { text-decoration: underline; }
 
 /* Experience timeline */
 .page { margin: 2rem 0; }

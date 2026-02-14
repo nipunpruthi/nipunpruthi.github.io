@@ -1,12 +1,11 @@
 ---
 title: Home
+description: "Nipun Pruthi — Senior Software Engineer at ixigo. Backend systems, system design, databases, APIs. B.Tech IIT Roorkee."
 # Optional: override site params for this page
-# greeting: "Hey, I am Nipun"
-# tagline: "software engineering. always building."
+# greeting_prefix: "Hey, I am "
+# hero_name: "Nipun Pruthi"
 # profile_image: img/me.jpg
 # what_i_do: "software engineering. always building."
 ---
 
-I'm a backend engineer. I completed my B.Tech in Electronics and Communication Engineering from [IIT Roorkee](https://www.iitr.ac.in).
-
-I've built and owned high-throughput systems at scale. I work with Java, Spring, SQL/NoSQL, Kafka, and cloud infra, and care about clear design and shipping things that work. When I'm not coding, I like to read and explore.
+I'm a Senior Software Engineer at [ixigo](https://www.ixigo.com). I did my B.Tech from [IIT Roorkee](https://www.iitr.ac.in) and work on backend systems—system design, databases, APIs, and cloud infra. I care about clear design and shipping things that work. When I'm not coding, I like to read and explore.

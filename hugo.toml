@@ -11,16 +11,24 @@ publishDir = "public"
 
 [menu]
   [[menu.main]]
-  name = "Blogs"
-  url = "/blog/"
-  weight = 10
-  [[menu.main]]
-  name = "Papershelf"
-  url = "/papershelf/"
-  weight = 20
+  name = "Home"
+  url = "/"
+  weight = 0
   [[menu.main]]
   name = "About"
   url = "/about/"
+  weight = 10
+  [[menu.main]]
+  name = "Experience"
+  url = "/experience/"
+  weight = 15
+  [[menu.main]]
+  name = "Blogs"
+  url = "/blog/"
+  weight = 20
+  [[menu.main]]
+  name = "Papershelf"
+  url = "/papershelf/"
   weight = 30
 
 [taxonomies]

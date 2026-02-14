@@ -5,7 +5,7 @@
       <span class="nav-brand-text">{{ .Site.Title }}</span>
     </a>
     <ul class="nav-links">
-      {{ range .Site.Menus.main }}
+      {{ range sort .Site.Menus.main "Weight" }}
       {{ if and (eq .Name "Papershelf") (not (default false $.Site.Params.show_papershelf)) }}{{ else }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}{{ end }}

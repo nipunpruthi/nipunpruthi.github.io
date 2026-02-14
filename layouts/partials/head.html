@@ -7,8 +7,9 @@
 <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} – Blog" href="{{ .Permalink }}">
   {{- end }}
 {{- end }}
-{{- if .Description }}
-<meta name="description" content="{{ .Description }}">
+{{- $desc := .Description | default .Site.Params.description }}
+{{- if $desc }}
+<meta name="description" content="{{ $desc }}">
 {{- end }}
 {{- $thumb := .Site.Params.profile_image | default "" }}
 {{- if $thumb }}
