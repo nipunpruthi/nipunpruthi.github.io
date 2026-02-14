@@ -1,6 +1,9 @@
 <header class="site-header">
   <nav class="nav">
-    <a class="nav-brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <a class="nav-brand" href="{{ "/" | relURL }}">
+      {{ with .Site.Params.profile_image }}<img class="nav-brand-img" src="{{ . | relURL }}" alt="" width="32" height="32">{{ end }}
+      <span class="nav-brand-text">{{ .Site.Title }}</span>
+    </a>
     <ul class="nav-links">
       {{ range .Site.Menus.main }}
       {{ if and (eq .Name "Papershelf") (not (default false $.Site.Params.show_papershelf)) }}{{ else }}

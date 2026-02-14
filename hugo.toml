@@ -29,12 +29,13 @@ publishDir = "public"
 [params]
   description = "Software engineer"
   # Landing page hero (override in content/_index.md front matter if needed)
-  greeting = "Hey, I am Nipun"
+  greeting_prefix = "Hey, I am "
+  hero_name = "Nipun Pruthi"
   tagline = "software engineering. always building."
   # Set to true to show Papershelf in the main nav (page stays at /papershelf/ either way)
   show_papershelf = true
-  # Landing: profile image (path relative to static/, e.g. img/me.jpg). Leave empty to hide.
-  profile_image = ""
+  # Landing: profile image (path relative to static/, e.g. img/self.jpeg). Also used as site thumbnail (og:image).
+  profile_image = "img/self.jpeg"
   # Short "what I do" line under the greeting (optional; tagline is used if empty)
   what_i_do = ""
   # Social links (leave empty to hide). Use full URLs; for email use address only (mailto: is added).

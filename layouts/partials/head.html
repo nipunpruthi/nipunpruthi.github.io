@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{- with .Site.Params.profile_image }}
+<link rel="icon" href="{{ . | relURL }}" type="image/jpeg">
+{{- end }}
 {{- with .Site.GetPage "/blog" }}
   {{- with .OutputFormats.Get "RSS" }}
 <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} – Blog" href="{{ .Permalink }}">
@@ -6,4 +9,12 @@
 {{- end }}
 {{- if .Description }}
 <meta name="description" content="{{ .Description }}">
+{{- end }}
+{{- $thumb := .Site.Params.profile_image | default "" }}
+{{- if $thumb }}
+<meta property="og:image" content="{{ (printf "%s%s" .Site.BaseURL $thumb) }}">
+<meta property="og:title" content="{{ .Site.Title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ (printf "%s%s" .Site.BaseURL $thumb) }}">
 {{- end }}

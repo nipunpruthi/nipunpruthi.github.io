@@ -3,7 +3,9 @@
 <section class="hero home-hero">
   <div class="home-hero-inner">
     <div class="home-hero-text">
-      <h1 class="hero-greeting">{{ .Param "greeting" | default .Site.Params.greeting | default "Hey" }}</h1>
+      {{ $prefix := .Param "greeting_prefix" | default .Site.Params.greeting_prefix | default "Hey, I am " }}
+      {{ $name := .Param "hero_name" | default .Site.Params.hero_name | default .Site.Title }}
+      <h1 class="hero-greeting">{{ $prefix }}<span class="hero-name">{{ $name }}</span></h1>
       {{ $what := .Param "what_i_do" | default .Site.Params.what_i_do | default .Site.Params.tagline }}
       <p class="hero-tagline">{{ $what | default "Software engineer" }}</p>
     </div>

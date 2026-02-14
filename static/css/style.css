@@ -27,7 +27,9 @@ html.theme-light {
 body { margin: 0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
 .site-header { border-bottom: 1px solid var(--border); padding: 1rem 2rem; }
 .nav { display: flex; justify-content: space-between; align-items: center; max-width: 960px; margin: 0 auto; }
-.nav-brand { font-size: 1.125rem; font-weight: 600; color: var(--text); text-decoration: none; }
+.nav-brand { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1.125rem; font-weight: 600; color: var(--text); text-decoration: none; }
+.nav-brand-img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; flex-shrink: 0; }
+.nav-brand-text { flex-shrink: 0; }
 .nav-links { display: flex; list-style: none; margin: 0; padding: 0; gap: 1.5rem; align-items: center; }
 .nav-links a { color: var(--text-muted); text-decoration: none; }
 .nav-links a:hover { color: var(--accent); }
@@ -39,6 +41,7 @@ html.theme-light .theme-icon-moon { display: inline-block; }
 main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .hero { margin: 3rem 0 4rem; }
 .hero-greeting { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.02em; color: var(--text); }
+.hero-name { color: var(--link); font-weight: 700; }
 .hero-tagline { color: var(--accent); font-size: 1.25rem; font-style: italic; margin: 0; }
 
 /* Home: hero with photo */
@@ -61,6 +64,8 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .home-about-body { color: var(--text-muted); }
 .home-about-body p { margin: 0 0 1rem; }
 .home-about-body p:last-child { margin-bottom: 0; }
+.home-about-body a { color: var(--link); text-decoration: none; }
+.home-about-body a:hover { text-decoration: underline; }
 
 /* Home: social links */
 .home-social .social-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: center; }
@@ -127,6 +132,8 @@ details[open] .timeline-details-summary::before { content: "▲ "; }
 .about-body p:first-child { margin-top: 0; }
 .about-body p { margin: 0 0 1rem; color: var(--text-muted); }
 .about-body p:last-child { margin-bottom: 0; }
+.about-body a { color: var(--link); text-decoration: none; }
+.about-body a:hover { text-decoration: underline; }
 .about-image-wrap { flex-shrink: 0; }
 .about-image { width: 100%; max-width: 280px; height: auto; border-radius: 8px; display: block; }
 .about-email { margin: 1.5rem 0 0.5rem; font-size: 0.9375rem; color: var(--text-muted); }

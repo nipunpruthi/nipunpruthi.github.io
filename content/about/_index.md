@@ -4,8 +4,7 @@ title: About Me
 # image: img/me.jpg
 ---
 
-I'm a software engineer focused on building reliable systems and products.
+I'm a backend engineer. I completed my B.Tech in Electronics and Communication Engineering from [IIT Roorkee](https://www.iitr.ac.in).
 
-I've worked across backend services, APIs, and infrastructure. I care about clear code, good design, and shipping things that work.
+I've built and owned high-throughput systems at scale. I work with Java, Spring, SQL/NoSQL, Kafka, and cloud infra, and care about clear design and shipping things that work. When I'm not coding, I like to read and explore.
 
-When I'm not coding, I like to read and explore.
