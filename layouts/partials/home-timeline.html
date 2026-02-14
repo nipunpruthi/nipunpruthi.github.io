@@ -31,10 +31,22 @@
           {{ range . }}<span class="timeline-tag">{{ . }}</span>{{ end }}
         </div>
         {{ end }}
-        {{ with $e.details }}
+        {{ if $e.more }}
         <details class="timeline-details">
           <summary class="timeline-details-summary">More</summary>
-          <div class="timeline-details-content">{{ . | markdownify }}</div>
+          <div class="timeline-details-content">
+            {{ range $e.more }}
+            <div class="timeline-project">
+              {{ with .name }}<h3 class="timeline-project-name">{{ . }}</h3>{{ end }}
+              {{ with .details }}<ul class="timeline-project-details">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </details>
+        {{ else if $e.details }}
+        <details class="timeline-details">
+          <summary class="timeline-details-summary">More</summary>
+          <div class="timeline-details-content">{{ $e.details | markdownify }}</div>
         </details>
         {{ end }}
       </div>

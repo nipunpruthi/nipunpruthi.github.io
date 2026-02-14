@@ -12,6 +12,9 @@
     </div>
     {{ end }}
   </div>
+  {{ with .Site.Params.social.email }}
+  <p class="about-email">Email: <a href="mailto:{{ . }}">{{ . }}</a></p>
+  {{ end }}
   {{ partial "social-links.html" . }}
 </article>
 {{ end }}

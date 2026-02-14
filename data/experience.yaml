@@ -35,9 +35,20 @@ entries:
     company: "Texas Instruments"
     company_url: "https://www.ti.com"
     location: "Bangalore, India"
-    # icon: "img/companies/ti.png"
+    icon: "img/companies/ti.png"
     start: "July '20"
     end: "April '21"
     description: "Embedded systems and software development."
-    details: "Developed firmware and tooling for embedded platforms; wrote tests and documentation. Collaborated with hardware teams on validation."
+    # details: " Hdjalf"
+    more:
+      - name: "Embedded platform firmware & tooling"
+        details:
+          - "Developed firmware and tooling for embedded platforms."
+          - "Wrote tests and documentation."
+          - "Collaborated with hardware teams on validation."
+      - name: "Embedded platform firmware & tooling"
+        details:
+          - "Developed firmware and tooling for embedded platforms."
+          - "Wrote tests and documentation."
+          - "Collaborated with hardware teams on validation."
     tech: ["C", "C++", "Python", "Embedded Linux"]
