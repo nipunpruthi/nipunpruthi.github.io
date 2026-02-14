@@ -69,6 +69,9 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 
 /* Blog list and single */
 .blog-intro { margin-bottom: 2rem; color: #444; }
+.blog-rss-link { margin: -0.5rem 0 1rem; font-size: 0.875rem; }
+.blog-rss-link a { color: #666; }
+.blog-rss-link a:hover { color: #c23; }
 .post-list { list-style: none; margin: 0; padding: 0; }
 .post-item { padding: 1.25rem 0; border-bottom: 1px solid #eee; }
 .post-item:first-child { padding-top: 0; }

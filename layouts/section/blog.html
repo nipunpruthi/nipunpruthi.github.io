@@ -5,6 +5,9 @@
   {{ with .Content }}
   <div class="blog-intro">{{ . }}</div>
   {{ end }}
+  {{ with .OutputFormats.Get "RSS" }}
+  <p class="blog-rss-link"><a href="{{ .Permalink }}">RSS feed</a></p>
+  {{ end }}
   {{ partial "blog-tag-filter.html" . }}
   {{ partial "blog-search.html" . }}
   <ul class="post-list" id="post-list">

@@ -1,4 +1,9 @@
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{- with .Site.GetPage "/blog" }}
+  {{- with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} – Blog" href="{{ .Permalink }}">
+  {{- end }}
+{{- end }}
 {{- if .Description }}
 <meta name="description" content="{{ .Description }}">
 {{- end }}

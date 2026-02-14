@@ -1,6 +1,6 @@
 # Nipun Pruthi – Personal site
 
-Hugo-based personal site for [nipunpruthi.github.io](https://nipunpruthi.github.io/), with blog, experience timeline, about page, papershelf, and photos. Deploys to GitHub Pages.
+Hugo-based personal site for [nipunpruthi.github.io](https://nipunpruthi.github.io/), with blog, about page, papershelf, and a single-page landing (about, experience timeline, education, connect). Deploys to GitHub Pages.
 
 ## Prerequisites
 
@@ -28,9 +28,7 @@ brew install hugo
 │   ├── _index.md     # Home page content
 │   ├── about/        # About me
 │   ├── blog/         # Blog posts
-│   ├── experience/   # Experience section index
 │   ├── papershelf/   # Papers
-│   └── photos/       # Photos
 ├── data/             # Structured data (e.g. experience.yaml)
 ├── layouts/          # HTML templates (partials, section layouts)
 ├── static/           # Images, CSS, JS (served as-is)
@@ -87,6 +85,17 @@ Order in the file is display order (top = most recent).
 - **All tags page**: `/tags/` lists every tag with post count; each tag links to `/tags/tag-name/`.
 - **Single-tag page**: `/tags/tag-name/` lists only posts with that tag. Tag links on each post also go to the matching tag page.
 
+### RSS (what it is and why use it)
+
+**What it is:** RSS (Really Simple Syndication) is a standard XML feed that lists your latest blog posts (title, link, date, short description). Your blog feed is at **`/blog/index.xml`**.
+
+**Why use it:**
+- **Readers and apps** – People can subscribe in an RSS reader (e.g. Feedly, NetNewsWire, Inoreader). The reader checks the feed and shows new posts without them visiting your site every time.
+- **One place for updates** – Subscribers get all updates from blogs they follow in one app instead of checking many sites.
+- **No algorithm** – Unlike social feeds, readers show posts in chronological order; nothing is hidden or promoted.
+
+**On this site:** Every page has `<link rel="alternate" type="application/rss+xml" ...>` in the head so browsers and readers can discover the feed. The blog list page also has an “RSS feed” link. Section list pages output RSS when `[outputs] section = ["HTML", "RSS"]` is set in `hugo.toml`.
+
 ### Blog search
 
 - **Client-side search** on `/blog/` and `/tags/...`: a “Search posts” input filters the visible list by title, summary, and tags. No server or index; each post has a `data-search` attribute and a small script shows or hides items as you type. “No posts match your search” appears when nothing matches.
@@ -97,19 +106,13 @@ Order in the file is display order (top = most recent).
 - **List**: Edit `data/papershelf.yaml`. Each entry: `title`, `authors`, `source` (e.g. journal or “Book”), `year`, `url` (optional, link to PDF or page), `comment` (your take).
 - **Hide the Papershelf tab**: In `hugo.toml`, set `show_papershelf = false` under `[params]`. The page stays at `/papershelf/` but the nav link is hidden. Set to `true` when you want it in the menu.
 
-### Photos (recommended approach)
-
-- **One gallery page** at `/photos/`: grid of images; add **tags** (e.g. place name, “landscape”, “street”) so you can filter. Keeps everything in one place and still lets you browse by theme or location.
-- **Optional later**: **Separate pages per place** (e.g. `/photos/paris/`) as subsections with a short intro and a grid for that set—good for trips or themed sets. Can be added when you want dedicated pages for a place or series.
-- **Recommendation**: Start with a single gallery + tags; add place/series pages only if you want standalone stories for specific sets.
-
 ## Deployment (GitHub Pages)
 
 1. Push the repo to GitHub.
-2. In repo **Settings → Pages**: set source to **GitHub Actions**.
-3. On push to `main`, the workflow in `.github/workflows/hugo.yml` builds Hugo and deploys to GitHub Pages.
+2. In repo **Settings → Pages**: set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+3. On push to `main`, the workflow in `.github/workflows/hugo.yml` runs: checkout, `hugo --minify`, then deploys `public/` to the `gh-pages` branch. The workflow has `contents: write` so it can push the built site.
 
-No need to commit `public/`; the workflow builds it.
+No need to commit `public/`; the workflow builds it. If deploy fails, confirm Pages is set to GitHub Actions and that the default `GITHUB_TOKEN` has not been restricted.
 
 ## Local development
 
@@ -119,7 +122,7 @@ cd nipunpruthi.github.io
 hugo server
 ```
 
-Open http://localhost:1313 and use the nav to check About, Experience, Blog, etc.
+Open http://localhost:1313 and use the nav (Blogs, Papershelf, About) and the landing page.
 
 ## License
 

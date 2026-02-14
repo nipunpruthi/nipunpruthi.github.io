@@ -32,7 +32,7 @@ Track progress: one feature at a time, test, then next. Mark steps with [Done] a
 - [Done] data/papershelf.yaml (title, authors, source, year, url, comment); layouts/section/papershelf.html; intro in content/papershelf/_index.md. Nav: show_papershelf = false in hugo.toml hides Papershelf link (page still at /papershelf/).
 
 ## 9. Photos page
-- [ ] Gallery section and layout
+- [Cancelled] Removed from scope.
 
 ## 10. Polish & deploy
-- [ ] Nav links, RSS, GitHub Actions
+- [Done] Nav: Photos menu entry fixed in hugo.toml. RSS: [outputs] section = ["HTML", "RSS"]; layouts/_default/rss.xml for section feeds; blog feed at /blog/index.xml; RSS link in head on all pages and "RSS feed" link on blog list. GitHub Actions: concurrency group, contents: write permission.

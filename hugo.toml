@@ -5,6 +5,10 @@ title = "Nipun Pruthi"
 # GitHub Pages often uses branch "gh-pages" or "docs"; default publish is "public"
 publishDir = "public"
 
+# Enable RSS for section list pages (e.g. /blog/index.xml)
+[outputs]
+  section = ["HTML", "RSS"]
+
 [menu]
   [[menu.main]]
   name = "Blogs"
@@ -18,14 +22,6 @@ publishDir = "public"
   name = "About"
   url = "/about/"
   weight = 30
-  [[menu.main]]
-  name = "Experience"
-  url = "/experience/"
-  weight = 40
-  [[menu.main]]
-  name = "Photos"
-  url = "/photos/"
-  weight = 50
 
 [taxonomies]
   tag = "tags"
@@ -35,3 +31,18 @@ publishDir = "public"
   # Landing page hero (override in content/_index.md front matter if needed)
   greeting = "Hey, I am Nipun"
   tagline = "software engineering. always building."
+  # Set to true to show Papershelf in the main nav (page stays at /papershelf/ either way)
+  show_papershelf = true
+  # Landing: profile image (path relative to static/, e.g. img/me.jpg). Leave empty to hide.
+  profile_image = ""
+  # Short "what I do" line under the greeting (optional; tagline is used if empty)
+  what_i_do = ""
+  # Social links (leave empty to hide). Use full URLs; for email use address only (mailto: is added).
+  [params.social]
+  email = "nipruthi@gmail.com"
+  linkedin = "https://linkedin.com/in/nipunpruthi"
+  instagram = ""
+  twitter = ""
+  github = ""
+  youtube = ""
+
