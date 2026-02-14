@@ -52,16 +52,17 @@ image: img/me.jpg
 
 Path is relative to `static/`.
 
-### Landing page greeting and tagline
+### Landing page (home)
 
-Edit `hugo.toml` under `[params]`:
+The home page shows: **greeting + photo + what I do**, **about me** (from `content/_index.md` body), **experience timeline**, **education**, and **social links**.
 
-- `greeting` – e.g. "Hey, I am Nipun"
-- `tagline` – e.g. "software engineering. always building."
+- **Greeting, tagline, photo**: In `hugo.toml` under `[params]`: `greeting`, `tagline`, `profile_image` (e.g. `img/me.jpg`; path relative to `static/`). Optional `what_i_do` overrides the line under the greeting (otherwise `tagline` is used). Override any of these in `content/_index.md` front matter.
+- **About me**: Edit the body of `content/_index.md` (markdown).
+- **Experience**: Still driven by `data/experience.yaml`; the timeline is rendered on the home page. The standalone `/experience/` page remains for direct links; it is no longer in the main nav.
+- **Education**: Edit `data/education.yaml`. Each entry: `degree`, `institution`, `start`, `end`, optional `description`. Order = display order (top = most recent).
+- **Social links**: In `hugo.toml` under `[params.social]` set `linkedin`, `instagram`, `twitter`, `github`, `youtube` (full URLs). Leave a key empty to hide that link.
 
-You can override these per-page in `content/_index.md` front matter.
-
-### Experience timeline
+### Experience data (used on home and /experience/)
 
 Edit `data/experience.yaml`. Each entry has:
 
@@ -78,6 +79,29 @@ Order in the file is display order (top = most recent).
 - New post: `hugo new blog/your-slug.md`
 - Front matter: `title`, `date`, `draft: false`, `tags: [tag1, tag2]`
 - Use `<!--more-->` in the body to set where the summary stops on the list page.
+
+### Tags (filter by tag)
+
+- Tag taxonomy is defined in `hugo.toml` (`tag = "tags"`). Add `tags: [a, b]` in post front matter.
+- **Blog list** shows a “Filter by tag” strip: **All**, each tag, and **All tags →** (links to `/tags/`).
+- **All tags page**: `/tags/` lists every tag with post count; each tag links to `/tags/tag-name/`.
+- **Single-tag page**: `/tags/tag-name/` lists only posts with that tag. Tag links on each post also go to the matching tag page.
+
+### Blog search
+
+- **Client-side search** on `/blog/` and `/tags/...`: a “Search posts” input filters the visible list by title, summary, and tags. No server or index; each post has a `data-search` attribute and a small script shows or hides items as you type. “No posts match your search” appears when nothing matches.
+
+### Papershelf
+
+- **Intro**: Edit `content/papershelf/_index.md` to describe what kinds of papers you read (systems, algorithms, etc.).
+- **List**: Edit `data/papershelf.yaml`. Each entry: `title`, `authors`, `source` (e.g. journal or “Book”), `year`, `url` (optional, link to PDF or page), `comment` (your take).
+- **Hide the Papershelf tab**: In `hugo.toml`, set `show_papershelf = false` under `[params]`. The page stays at `/papershelf/` but the nav link is hidden. Set to `true` when you want it in the menu.
+
+### Photos (recommended approach)
+
+- **One gallery page** at `/photos/`: grid of images; add **tags** (e.g. place name, “landscape”, “street”) so you can filter. Keeps everything in one place and still lets you browse by theme or location.
+- **Optional later**: **Separate pages per place** (e.g. `/photos/paris/`) as subsections with a short intro and a grid for that set—good for trips or themed sets. Can be added when you want dedicated pages for a place or series.
+- **Recommendation**: Start with a single gallery + tags; add place/series pages only if you want standalone stories for specific sets.
 
 ## Deployment (GitHub Pages)
 

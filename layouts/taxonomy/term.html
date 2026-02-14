@@ -1,11 +1,8 @@
-{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "title" }}Tag: {{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "main" }}
 <article class="page blog-list-page">
-  <h1>{{ .Title }}</h1>
-  {{ with .Content }}
-  <div class="blog-intro">{{ . }}</div>
-  {{ end }}
-  {{ partial "blog-tag-filter.html" . }}
+  <h1>Tag: {{ .Title }}</h1>
+  <p class="blog-intro"><a href="{{ "/blog/" | relURL }}">← All posts</a></p>
   {{ partial "blog-search.html" . }}
   <ul class="post-list" id="post-list">
     {{ range .Pages }}

@@ -10,6 +10,34 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .hero { margin: 3rem 0 4rem; }
 .hero-greeting { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
 .hero-tagline { color: #c23; font-size: 1.25rem; font-style: italic; margin: 0; }
+
+/* Home: hero with photo */
+.home-hero { margin-bottom: 2.5rem; }
+.home-hero-inner { display: grid; gap: 1.5rem; align-items: start; }
+@media (min-width: 640px) {
+  .home-hero-inner { grid-template-columns: 1fr auto; }
+}
+.home-hero-text { min-width: 0; }
+.home-hero-image-wrap { flex-shrink: 0; }
+.home-hero-image { width: 100%; max-width: 200px; height: auto; border-radius: 8px; display: block; }
+@media (min-width: 640px) {
+  .home-hero-image { max-width: 240px; }
+}
+
+/* Home: sections */
+.home-section { margin: 2.5rem 0; padding-top: 2rem; border-top: 1px solid #eee; }
+.home-section:first-of-type { border-top: 0; padding-top: 0; }
+.home-section-title { font-size: 1.25rem; font-weight: 600; margin: 0 0 1rem; }
+.home-about-body { color: #444; }
+.home-about-body p { margin: 0 0 1rem; }
+.home-about-body p:last-child { margin-bottom: 0; }
+
+/* Home: social links */
+.home-social .social-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.home-social .social-links a { color: #333; text-decoration: none; display: inline-flex; }
+.home-social .social-links a:hover { color: #c23; }
+.social-icon-svg { width: 1.5rem; height: 1.5rem; display: block; }
+
 .site-footer { border-top: 1px solid #eee; padding: 1rem 2rem; text-align: center; color: #666; font-size: 0.875rem; }
 
 /* Experience timeline */
@@ -37,6 +65,7 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .about-body p:last-child { margin-bottom: 0; }
 .about-image-wrap { flex-shrink: 0; }
 .about-image { width: 100%; max-width: 280px; height: auto; border-radius: 8px; display: block; }
+.about-page .connect-section { margin-top: 2rem; }
 
 /* Blog list and single */
 .blog-intro { margin-bottom: 2rem; color: #444; }
@@ -54,3 +83,33 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .post-content { color: #333; }
 .post-content p { margin: 0 0 1rem; }
 .post-content p:last-child { margin-bottom: 0; }
+
+/* Tag filter and taxonomy */
+.tag-filter { margin-bottom: 1.5rem; padding: 0.75rem 0; border-bottom: 1px solid #eee; }
+.tag-filter-label { font-size: 0.875rem; color: #666; margin-right: 0.5rem; }
+.tag-filter-list { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 0.5rem; }
+.tag-link { text-decoration: none; color: #555; }
+.tag-link:hover { background: #e8e8e8; color: #1a1a1a; }
+.tag-link-all { font-weight: 600; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.taxonomy-intro { color: #666; margin-bottom: 1rem; }
+
+/* Blog search */
+.blog-search-wrap { margin-bottom: 1.5rem; }
+.blog-search-label { display: block; font-size: 0.875rem; color: #666; margin-bottom: 0.35rem; }
+.blog-search-input { width: 100%; max-width: 24rem; padding: 0.5rem 0.75rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 6px; }
+.blog-search-input:focus { outline: none; border-color: #c23; }
+.blog-search-no-results { margin: 1rem 0 0; color: #666; font-size: 0.9375rem; }
+.blog-search-data { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* Papershelf */
+.papershelf-intro { margin-bottom: 2rem; color: #444; }
+.papershelf-list { list-style: none; margin: 0; padding: 0; }
+.papershelf-item { padding: 1.5rem 0; border-bottom: 1px solid #eee; }
+.papershelf-item:last-child { border-bottom: 0; }
+.papershelf-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 0.5rem; }
+.papershelf-title { font-weight: 600; }
+.papershelf-title[href]:hover { color: #c23; }
+.papershelf-authors { color: #555; font-size: 0.9375rem; }
+.papershelf-source, .papershelf-year { font-size: 0.875rem; color: #666; }
+.papershelf-comment { margin: 0; color: #444; font-size: 0.9375rem; font-style: italic; }

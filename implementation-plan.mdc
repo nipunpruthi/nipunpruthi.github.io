@@ -23,13 +23,13 @@ Track progress: one feature at a time, test, then next. Mark steps with [Done] a
 - [Done] layouts/section/blog.html (list with date, tags, summary); layouts/blog/single.html (date, tags, content). Sample posts in content/blog/ with tags. README.md added with commands, structure, profile image, experience, blog, deploy.
 
 ## 6. Blogs: tags + filter by tags
-- [ ] Taxonomy, tag list page, filter UI
+- [Done] layouts/taxonomy/terms.html (all tags at /tags/); layouts/taxonomy/term.html (posts per tag at /tags/name/); partial blog-tag-filter.html on blog list. Tag links on posts point to tag pages.
 
 ## 7. Blogs: search
-- [ ] Client-side or simple search
+- [Done] Client-side search: partial blog-search.html (label + input + no-results message), data-search on each .post-item (title + plainify summary + tags), blog-search-script.html filters list by query words; used on blog list and tag term pages.
 
 ## 8. Papershelf page
-- [ ] Section, layout, content
+- [Done] data/papershelf.yaml (title, authors, source, year, url, comment); layouts/section/papershelf.html; intro in content/papershelf/_index.md. Nav: show_papershelf = false in hugo.toml hides Papershelf link (page still at /papershelf/).
 
 ## 9. Photos page
 - [ ] Gallery section and layout

@@ -1,0 +1,19 @@
+{{ with .Site.Data.experience.entries }}
+<section class="home-section home-experience" id="experience">
+  <h2 class="home-section-title">Experience</h2>
+  <ol class="timeline">
+    {{ range . }}
+    <li class="timeline-item">
+      <span class="timeline-marker" aria-hidden="true"></span>
+      <div class="timeline-content">
+        <div class="timeline-period">{{ .start }} — {{ .end }}</div>
+        <h3 class="timeline-role">{{ .role }}{{ with .company }} <span class="timeline-company">@ {{ . }}</span>{{ end }}</h3>
+        {{ with .description }}
+        <p class="timeline-description">{{ . }}</p>
+        {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+</section>
+{{ end }}

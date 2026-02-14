@@ -3,8 +3,9 @@
     <a class="nav-brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
     <ul class="nav-links">
       {{ range .Site.Menus.main }}
+      {{ if and (eq .Name "Papershelf") (not (default false $.Site.Params.show_papershelf)) }}{{ else }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end }}
+      {{ end }}{{ end }}
     </ul>
   </nav>
 </header>

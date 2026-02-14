@@ -1,0 +1,12 @@
+{{ define "title" }}Tags | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="page taxonomy-page">
+  <h1>Tags</h1>
+  <p class="taxonomy-intro">Filter blog posts by tag.</p>
+  <div class="tag-cloud">
+    {{ range .Site.Taxonomies.tags.ByCount }}
+    <a class="tag tag-link" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} ({{ .Count }})</a>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

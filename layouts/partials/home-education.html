@@ -1,0 +1,19 @@
+{{ with .Site.Data.education.entries }}
+<section class="home-section home-education" id="education">
+  <h2 class="home-section-title">Education</h2>
+  <ol class="timeline education-timeline">
+    {{ range . }}
+    <li class="timeline-item">
+      <span class="timeline-marker" aria-hidden="true"></span>
+      <div class="timeline-content">
+        <div class="timeline-period">{{ .start }} — {{ .end }}</div>
+        <h3 class="timeline-role">{{ .degree }}{{ with .institution }} <span class="timeline-company">@ {{ . }}</span>{{ end }}</h3>
+        {{ with .description }}
+        <p class="timeline-description">{{ . }}</p>
+        {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+</section>
+{{ end }}

@@ -1,0 +1,12 @@
+# Education (order: first = most recent)
+entries:
+  - degree: "B.Tech. in Computer Science"
+    institution: "Your University"
+    start: "2012"
+    end: "2016"
+    description: ""
+  - degree: "High School"
+    institution: "Your School"
+    start: "2010"
+    end: "2012"
+    description: ""

@@ -1,0 +1,28 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="page papershelf-page">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}
+  <div class="papershelf-intro">{{ . }}</div>
+  {{ end }}
+  <ol class="papershelf-list">
+    {{ range .Site.Data.papershelf.entries }}
+    <li class="papershelf-item">
+      <div class="papershelf-meta">
+        {{ if .url }}
+        <a href="{{ .url }}" class="papershelf-title" target="_blank" rel="noopener">{{ .title }}</a>
+        {{ else }}
+        <span class="papershelf-title">{{ .title }}</span>
+        {{ end }}
+        <span class="papershelf-authors">{{ .authors }}</span>
+        {{ with .source }}<span class="papershelf-source">{{ . }}</span>{{ end }}
+        {{ with .year }}<span class="papershelf-year">{{ . }}</span>{{ end }}
+      </div>
+      {{ with .comment }}
+      <p class="papershelf-comment">{{ . }}</p>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ol>
+</article>
+{{ end }}

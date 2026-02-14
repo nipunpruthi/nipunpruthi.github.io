@@ -1,7 +1,28 @@
 {{ define "title" }}{{ .Site.Title }}{{ end }}
 {{ define "main" }}
-<section class="hero">
-  <h1 class="hero-greeting">{{ .Param "greeting" | default .Site.Params.greeting | default "Hey" }}</h1>
-  <p class="hero-tagline">{{ .Param "tagline" | default .Site.Params.tagline | default "Software engineer" }}</p>
+<section class="hero home-hero">
+  <div class="home-hero-inner">
+    <div class="home-hero-text">
+      <h1 class="hero-greeting">{{ .Param "greeting" | default .Site.Params.greeting | default "Hey" }}</h1>
+      {{ $what := .Param "what_i_do" | default .Site.Params.what_i_do | default .Site.Params.tagline }}
+      <p class="hero-tagline">{{ $what | default "Software engineer" }}</p>
+    </div>
+    {{ with .Param "profile_image" | default .Site.Params.profile_image }}
+    <div class="home-hero-image-wrap">
+      <img class="home-hero-image" src="{{ . | relURL }}" alt="" loading="eager">
+    </div>
+    {{ end }}
+  </div>
 </section>
+
+{{ with .Content }}
+<section class="home-section home-about" id="about">
+  <h2 class="home-section-title">About me</h2>
+  <div class="home-about-body">{{ . }}</div>
+</section>
+{{ end }}
+
+{{ partial "home-timeline.html" . }}
+{{ partial "home-education.html" . }}
+{{ partial "social-links.html" . }}
 {{ end }}

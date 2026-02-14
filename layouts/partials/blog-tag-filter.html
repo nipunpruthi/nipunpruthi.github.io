@@ -1,0 +1,12 @@
+{{ with .Site.Taxonomies.tags }}
+<div class="tag-filter">
+  <span class="tag-filter-label">Filter by tag:</span>
+  <div class="tag-filter-list">
+    <a class="tag tag-link tag-link-all" href="{{ "/blog/" | relURL }}">All</a>
+    {{ range .ByCount }}
+    <a class="tag tag-link" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
+    {{ end }}
+    <a class="tag tag-link" href="{{ "/tags/" | relURL }}">All tags →</a>
+  </div>
+</div>
+{{ end }}

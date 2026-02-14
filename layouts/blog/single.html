@@ -8,7 +8,7 @@
       {{ with .Param "tags" }}
       <span class="post-tags">
         {{ range . }}
-        <span class="tag">{{ . }}</span>
+        <a href="{{ (printf "/tags/%s/" .) | relURL }}" class="tag tag-link">{{ . }}</a>
         {{ end }}
       </span>
       {{ end }}

@@ -1,0 +1,31 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var input = document.getElementById('blog-search-input');
+  var list = document.getElementById('post-list');
+  var noResults = document.getElementById('blog-search-no-results');
+  if (!input || !list) return;
+
+  var items = list.querySelectorAll('.post-item');
+
+  function runSearch() {
+    var query = (input.value || '').trim().toLowerCase();
+    var words = query ? query.split(/\s+/) : [];
+    var visibleCount = 0;
+
+    for (var i = 0; i < items.length; i++) {
+      var item = items[i];
+      var dataEl = item.querySelector('.blog-search-data');
+      var raw = dataEl ? dataEl.textContent : '';
+      var text = (raw == null ? '' : raw).trim().toLowerCase();
+      var match = words.length === 0 || words.every(function (w) { return text.indexOf(w) !== -1; });
+      item.style.display = match ? '' : 'none';
+      if (match) visibleCount++;
+    }
+
+    if (noResults) noResults.hidden = visibleCount > 0 || words.length === 0;
+  }
+
+  input.addEventListener('input', runSearch);
+  input.addEventListener('search', runSearch);
+});
+</script>
