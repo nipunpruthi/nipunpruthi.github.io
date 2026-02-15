@@ -8,6 +8,10 @@
       <h1 class="hero-greeting">{{ $prefix }}<span class="hero-name">{{ $name }}</span></h1>
       {{ $what := .Param "what_i_do" | default .Site.Params.what_i_do | default .Site.Params.tagline }}
       <p class="hero-tagline">{{ $what | default "Software engineer" }}</p>
+      {{ $blinkSec := .Param "opportunities_blink_seconds" | default .Site.Params.opportunities_blink_seconds | default 3 }}
+      {{ with .Param "opportunities_note" | default .Site.Params.opportunities_note }}
+      <p class="hero-opportunities" style="--hero-update-blink-duration: {{ $blinkSec }}s;"><span class="hero-opportunities-update" aria-hidden="true">UPDATE</span><span class="hero-opportunities-dot" aria-hidden="true"></span>{{ . }}</p>
+      {{ end }}
     </div>
     {{ with .Param "profile_image" | default .Site.Params.profile_image }}
     <div class="home-hero-image-wrap">

@@ -46,6 +46,10 @@ publishDir = "public"
   profile_image = "img/self.jpeg"
   # Short "what I do" line under the greeting (optional; tagline is used if empty)
   what_i_do = ""
+  # Shown in hero when set (e.g. "Open to new opportunities · Open to relocation"). Leave empty to hide.
+  opportunities_note = "Actively looking for new opportunities · Open to relocation"
+  # UPDATE badge blink cycle in seconds (e.g. 3 = gentle 3s pulse).
+  opportunities_blink_seconds = 1
   # Social links (leave empty to hide). Use full URLs; for email use address only (mailto: is added).
   [params.social]
   email = "nipruthi@gmail.com"

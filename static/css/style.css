@@ -55,6 +55,11 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .hero-greeting { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.02em; color: var(--text); }
 .hero-name { color: var(--link); font-weight: 700; }
 .hero-tagline { color: var(--accent); font-size: 1.25rem; font-style: italic; margin: 0; }
+.hero-opportunities { display: inline-flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0 0; padding: 0.35rem 0.75rem 0.35rem 0.5rem; font-size: 0.9375rem; color: var(--link); background: var(--tag-bg); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; }
+.hero-opportunities-update { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; color: #1a1a1a; background: #e6b800; padding: 0.15rem 0.4rem; border-radius: 4px; flex-shrink: 0; animation: hero-update-blink var(--hero-update-blink-duration, 3s) ease-in-out infinite; }
+@keyframes hero-update-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+.hero-opportunities-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; animation: hero-dot-pulse 2.5s ease-in-out infinite; }
+@keyframes hero-dot-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 
 /* Home: hero with photo */
 .home-hero { margin-bottom: 2.5rem; }
