@@ -9,6 +9,11 @@
       <div class="timeline-content">
         <div class="timeline-head-row">
           <div class="timeline-head-left">
+            {{ with $p.icon }}
+            <div class="timeline-company-icon-wrap">
+              <img class="timeline-company-icon" src="{{ . | relURL }}" alt="" loading="lazy">
+            </div>
+            {{ end }}
             <h3 class="timeline-role">
               {{ if $p.url }}<a href="{{ $p.url }}" target="_blank" rel="noopener" class="timeline-company-link">{{ $p.title }}</a>{{ else }}<span class="timeline-company">{{ $p.title }}</span>{{ end }}
             </h3>

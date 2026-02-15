@@ -2,8 +2,8 @@
 # Optional: url, authors, abstract
 entries:
   - title: "(Cloud)HaPT : Handover Prediction Using Temporal Data for Improved QoS"
-    conference: "ApNet : Co-Located with SigComm"
+    conference: "ApNet : Co-Located with ACM SigComm"
     location: "Beijing, China"
     date: "2019"
     url: "https://conferences.sigcomm.org/events/apnet2019/posters/4.pdf"
-      # optional: paper or PDF link
+    icon: "img/publications/apnet19-logo.jpg"
