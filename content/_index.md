@@ -1,6 +1,6 @@
 ---
 title: Home
-description: "Nipun Pruthi — Senior Software Engineer at ixigo. Backend systems, system design, databases, APIs. B.Tech IIT Roorkee."
+description: "Nipun Pruthi — Senior Software Engineer & Backend Engineer. Hire for full-time or contract. Backend, system design, ixigo, IIT Roorkee. Open to opportunities."
 # Optional: override site params for this page
 # greeting_prefix: "Hey, I am "
 # hero_name: "Nipun Pruthi"

@@ -27,6 +27,10 @@ publishDir = "public"
   url = "/blog/"
   weight = 20
   [[menu.main]]
+  name = "Work with me"
+  url = "/work-with-me/"
+  weight = 25
+  [[menu.main]]
   name = "Papershelf"
   url = "/papershelf/"
   weight = 30
@@ -35,7 +39,10 @@ publishDir = "public"
   tag = "tags"
 
 [params]
-  description = "Software engineer"
+  # Used in meta description and search; include name + hire/role keywords for recruiters.
+  description = "Nipun Pruthi — Senior Software Engineer & Backend Engineer. Hire for full-time or contract. Backend, system design, ixigo, IIT Roorkee. Open to opportunities."
+  # Shown after site title on home page (e.g. "Nipun Pruthi | Senior Software Engineer").
+  title_suffix = " | Senior Software Engineer"
   # Landing page hero (override in content/_index.md front matter if needed)
   greeting_prefix = "Hey, I am "
   hero_name = "Nipun Pruthi"

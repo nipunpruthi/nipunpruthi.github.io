@@ -1,0 +1,13 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="page work-with-me-page">
+  <h1>{{ .Title }}</h1>
+  <div class="about-body">
+    {{ .Content }}
+  </div>
+  {{ with .Site.Params.social.email }}
+  <p class="about-email">Email: <a href="mailto:{{ . }}">{{ . }}</a></p>
+  {{ end }}
+  {{ partial "social-links.html" . }}
+</article>
+{{ end }}

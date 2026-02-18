@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+<link rel="canonical" href="{{ .Permalink }}">
 {{- with .Site.Params.profile_image }}
 <link rel="icon" href="{{ . | relURL }}" type="image/jpeg">
 {{- end }}
@@ -10,12 +11,18 @@
 {{- $desc := .Description | default .Site.Params.description }}
 {{- if $desc }}
 <meta name="description" content="{{ $desc }}">
+<meta property="og:description" content="{{ $desc }}">
 {{- end }}
 {{- $thumb := .Site.Params.profile_image | default "" }}
 {{- if $thumb }}
 <meta property="og:image" content="{{ (printf "%s%s" .Site.BaseURL $thumb) }}">
-<meta property="og:title" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ .Site.Title }}{{ with .Site.Params.title_suffix }}{{ . }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{{ (printf "%s%s" .Site.BaseURL $thumb) }}">
 {{- end }}
+{{- /* JSON-LD Person schema for name + hire/backend engineer search */}}
+{{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Site.Title "url" .Site.BaseURL "jobTitle" "Senior Software Engineer" "description" "Backend engineer and Senior Software Engineer. Open to full-time and contract roles. System design, distributed systems, Java, APIs." "worksFor" (dict "@type" "Organization" "name" "ixigo" "url" "https://www.ixigo.com") "alumniOf" (dict "@type" "CollegeOrUniversity" "name" "IIT Roorkee" "url" "https://www.iitr.ac.in") }}
+{{- with .Site.Params.profile_image }}{{ $person = merge $person (dict "image" (printf "%s%s" $.Site.BaseURL .)) }}{{ end }}
+{{- $sameAs := slice }}{{ with .Site.Params.social.linkedin }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ with .Site.Params.social.twitter }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ with .Site.Params.social.github }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ if $sameAs }}{{ $person = merge $person (dict "sameAs" $sameAs) }}{{ end }}
+<script type="application/ld+json">{{ $person | jsonify | safeHTML }}</script>

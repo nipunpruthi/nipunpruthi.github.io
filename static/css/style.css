@@ -83,6 +83,9 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .home-about-body p:last-child { margin-bottom: 0; }
 .home-about-body a { color: var(--link); text-decoration: none; }
 .home-about-body a:hover { text-decoration: underline; }
+.home-hire-cta-text { margin: 0; color: var(--text-muted); }
+.home-hire-cta-text a { color: var(--link); text-decoration: none; font-weight: 500; }
+.home-hire-cta-text a:hover { text-decoration: underline; }
 
 /* Home: social links */
 .home-social .social-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: center; }
