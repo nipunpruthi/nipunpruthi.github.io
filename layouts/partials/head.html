@@ -28,4 +28,4 @@
 {{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Site.Title "url" .Site.BaseURL "jobTitle" "Senior Software Engineer" "description" "Backend engineer and Senior Software Engineer. Open to full-time and contract roles. System design, distributed systems, Java, APIs." "worksFor" (dict "@type" "Organization" "name" "ixigo" "url" "https://www.ixigo.com") "alumniOf" (dict "@type" "CollegeOrUniversity" "name" "IIT Roorkee" "url" "https://www.iitr.ac.in") }}
 {{- with .Site.Params.profile_image }}{{ $person = merge $person (dict "image" (printf "%s%s" $.Site.BaseURL .)) }}{{ end }}
 {{- $sameAs := slice }}{{ with .Site.Params.social.linkedin }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ with .Site.Params.social.twitter }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ with .Site.Params.social.github }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ if $sameAs }}{{ $person = merge $person (dict "sameAs" $sameAs) }}{{ end }}
-<script type="application/ld+json">{{ $person | jsonify | safeHTML }}</script>
+<script type="application/ld+json">{{ $person | jsonify (dict "noHTMLEscape" true) }}</script>
