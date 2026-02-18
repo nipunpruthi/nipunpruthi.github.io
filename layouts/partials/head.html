@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
+{{- $siteName := .Site.Params.site_name | default .Site.Title }}
+<meta property="og:site_name" content="{{ $siteName }}">
 {{- /* Google Search uses PNG favicon (48x48). Add static/favicon.png for search result thumbnail. */}}
 {{- $faviconPng := .Site.Params.favicon_png | default "favicon.png" }}
 <link rel="icon" type="image/png" sizes="48x48" href="{{ $faviconPng | relURL }}">
@@ -29,3 +31,5 @@
 {{- with .Site.Params.profile_image }}{{ $person = merge $person (dict "image" (printf "%s%s" $.Site.BaseURL .)) }}{{ end }}
 {{- $sameAs := slice }}{{ with .Site.Params.social.linkedin }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ with .Site.Params.social.twitter }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ with .Site.Params.social.github }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ if $sameAs }}{{ $person = merge $person (dict "sameAs" $sameAs) }}{{ end }}
 <script type="application/ld+json">{{ $person | jsonify (dict "noHTMLEscape" true) }}</script>
+{{- $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" $siteName "url" .Site.BaseURL }}
+<script type="application/ld+json">{{ $website | jsonify (dict "noHTMLEscape" true) }}</script>
