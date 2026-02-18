@@ -18,6 +18,9 @@
 <meta name="description" content="{{ $desc }}">
 <meta property="og:description" content="{{ $desc }}">
 {{- end }}
+{{- with .Site.Params.keywords }}
+<meta name="keywords" content="{{ . }}">
+{{- end }}
 {{- $thumb := .Site.Params.profile_image | default "" }}
 {{- if $thumb }}
 <meta property="og:image" content="{{ (printf "%s%s" .Site.BaseURL $thumb) }}">

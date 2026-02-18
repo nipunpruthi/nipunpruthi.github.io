@@ -40,7 +40,9 @@ publishDir = "public"
 
 [params]
   # Used in meta description and search; include name + hire/role keywords for recruiters.
-  description = "Nipun Pruthi — Senior Software Engineer & Backend Engineer. Hire for full-time or contract. Backend, system design, ixigo, IIT Roorkee. Open to opportunities."
+  description = "Nipun Pruthi — Senior Software Engineer & Software Engineer. Hire software engineer / hire senior software engineer. Backend, system design, Java, APIs. IIT Roorkee, ixigo. Open to full-time and contract."
+  # Optional: meta keywords for crawlers (Google largely ignores; other engines may use).
+  keywords = "Nipun Pruthi, software engineer, senior software engineer, hire software engineer, backend engineer, Java, system design, APIs, IIT Roorkee, ixigo, open to work"
   # Site name shown in Google/search and social (e.g. under URL). Use this to override "GitHub" on *.github.io.
   site_name = "Nipun Pruthi Official"
   # Shown after site title on home page (e.g. "Nipun Pruthi | Senior Software Engineer").
