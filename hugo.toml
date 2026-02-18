@@ -51,6 +51,8 @@ publishDir = "public"
   show_papershelf = true
   # Landing: profile image (path relative to static/, e.g. img/self.jpeg). Also used as site thumbnail (og:image).
   profile_image = "img/self.jpeg"
+  # Favicon for Google Search result thumbnail: 48x48 PNG at static/favicon.png (or set path here, e.g. img/favicon.png).
+  favicon_png = "favicon.png"
   # Short "what I do" line under the greeting (optional; tagline is used if empty)
   what_i_do = ""
   # Shown in hero when set (e.g. "Open to new opportunities · Open to relocation"). Leave empty to hide.

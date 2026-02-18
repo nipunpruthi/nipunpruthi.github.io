@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
+{{- /* Google Search uses PNG favicon (48x48). Add static/favicon.png for search result thumbnail. */}}
+{{- $faviconPng := .Site.Params.favicon_png | default "favicon.png" }}
+<link rel="icon" type="image/png" sizes="48x48" href="{{ $faviconPng | relURL }}">
 {{- with .Site.Params.profile_image }}
 <link rel="icon" href="{{ . | relURL }}" type="image/jpeg">
 {{- end }}
