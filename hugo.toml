@@ -7,7 +7,13 @@ publishDir = "public"
 
 # Enable RSS for section list pages (e.g. /blog/index.xml)
 [outputs]
+  home = ["HTML", "RSS", "sitemap", "sitemaps"]
   section = ["HTML", "RSS"]
+
+# Copy of sitemap at /sitemaps.xml (same content as /sitemap.xml)
+[outputFormats.sitemaps]
+  baseName = "sitemaps"
+  mediatype = "application/xml"
 
 [menu]
   [[menu.main]]
