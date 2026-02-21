@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{- $version := .Site.Params.version | default "dev" }}
+<meta name="app-version" content="{{ $version }}">
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v={{ $version }}">
 <link rel="canonical" href="{{ .Permalink }}">
 {{- $siteName := .Site.Params.site_name | default .Site.Title }}
 <meta property="og:site_name" content="{{ $siteName }}">
