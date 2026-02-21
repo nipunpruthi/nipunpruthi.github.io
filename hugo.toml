@@ -7,12 +7,20 @@ publishDir = "public"
 
 # Enable RSS for section list pages (e.g. /blog/index.xml)
 [outputs]
-  home = ["HTML", "RSS", "sitemap", "sitemaps"]
+  home = ["HTML", "RSS", "sitemapindex", "sitemaps", "sitemappages"]
   section = ["HTML", "RSS"]
 
-# Copy of sitemap at /sitemaps.xml (same content as /sitemap.xml)
+# Custom sitemap index at sitemap.xml (override built-in; GSC reads index when urlset fails)
+[outputFormats.sitemapindex]
+  baseName = "sitemap"
+  mediatype = "application/xml"
+
 [outputFormats.sitemaps]
   baseName = "sitemaps"
+  mediatype = "application/xml"
+
+[outputFormats.sitemappages]
+  baseName = "sitemap-pages"
   mediatype = "application/xml"
 
 [menu]
