@@ -26,5 +26,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{{ (printf "%s%s" .Site.BaseURL $thumb) }}">
 {{- end }}
-{{- /* JSON-LD: partial outputs script tags; mark safe so included output is not escaped */}}
-{{- partial "schema-ld.html" . | safeHTML }}
+{{- /* JSON-LD: load from separate pages so script body is never double-encoded (fix "Invalid top level element string") */}}
+<script type="application/ld+json" src="{{ "schema-person/" | relURL }}"></script>
+<script type="application/ld+json" src="{{ "schema-website/" | relURL }}"></script>

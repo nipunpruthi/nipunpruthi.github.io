@@ -1,0 +1,3 @@
+{{- $siteName := .Site.Params.site_name | default .Site.Title }}
+{{- $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" $siteName "url" .Site.BaseURL "description" "Nipun Pruthi — Senior Software Engineer. Hire software engineer. Backend, Java, system design, APIs. IIT Roorkee, ixigo." }}
+{{- $website | jsonify (dict "noHTMLEscape" true) }}
