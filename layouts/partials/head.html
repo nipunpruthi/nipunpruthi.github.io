@@ -5,9 +5,9 @@
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}">
 {{- $siteName := .Site.Params.site_name | default .Site.Title }}
 <meta property="og:site_name" content="{{ $siteName }}">
-{{- /* Google Search result icon: 48x48 PNG at static/favicon.png (square). Only one rel=icon so Google uses it. */}}
+{{- /* Google Search result icon: 48x48 PNG. Absolute URL so crawlers fetch it reliably. */}}
 {{- $faviconPng := .Site.Params.favicon_png | default "favicon.png" }}
-<link rel="icon" type="image/png" sizes="48x48" href="{{ $faviconPng | relURL }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ $faviconPng | absURL }}">
 {{- with .Site.GetPage "/blog" }}
   {{- with .OutputFormats.Get "RSS" }}
 <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} – Blog" href="{{ .Permalink }}">

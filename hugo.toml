@@ -61,8 +61,8 @@ publishDir = "public"
   keywords = "Nipun Pruthi, software engineer, senior software engineer, hire software engineer, backend engineer, Java, system design, APIs, IIT Roorkee, ixigo, open to work"
   # Site name shown in Google/search and social (e.g. under URL). Use this to override "GitHub" on *.github.io.
   site_name = "Nipun Pruthi Official"
-  # Shown after site title on home page (e.g. "Nipun Pruthi | Senior Software Engineer").
-  title_suffix = " | Senior Software Engineer"
+  # Shown after site title on home page and in Google search.
+  title_suffix = " Official | Senior Software Engineer"
   # Landing page hero (override in content/_index.md front matter if needed)
   greeting_prefix = "Hey, I am "
   hero_name = "Nipun Pruthi"
