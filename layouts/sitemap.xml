@@ -1,12 +1,12 @@
-{{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" | safeHTML -}}
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{{- range where .Pages "Sitemap.Disable" "ne" true }}
-{{- if .Permalink }}
+{{- /* XML sitemap: tag values are entity-escaped by default (no safeHTML on loc/lastmod). No priority/changefreq (Google ignores them). lastmod only when set. */ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" | safeHTML }}<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{ range where .Pages "Sitemap.Disable" "ne" true }}
+{{ if .Permalink }}
   <url>
-    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
-    <lastmod>{{ .Lastmod.UTC.Format "2006-01-02" }}</lastmod>{{ end }}
+    <loc>{{ .Permalink }}</loc>
+{{ if not .Lastmod.IsZero }}    <lastmod>{{ .Lastmod.UTC.Format "2006-01-02" }}</lastmod>
+{{ end }}
   </url>
-{{- end }}
-{{- end }}
+{{ end }}
+{{ end }}
 </urlset>
-
