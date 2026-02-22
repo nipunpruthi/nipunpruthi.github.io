@@ -5,15 +5,10 @@ title = "Nipun Pruthi"
 # GitHub Pages often uses branch "gh-pages" or "docs"; default publish is "public"
 publishDir = "public"
 
-# Enable RSS and text sitemap (one URL per line; Google-friendly).
+# Enable RSS. Text sitemap: static/sitemap.txt (one URL per line; GSC-friendly).
 [outputs]
-  home = ["HTML", "RSS", "sitemaptxt"]
+  home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
-
-[outputFormats.sitemaptxt]
-  baseName = "sitemap"
-  mediaType = "text/plain"
-  isPlainText = true
 
 [menu]
   [[menu.main]]

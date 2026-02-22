@@ -1,2 +1,0 @@
-{{ range where .Site.Pages "Sitemap.Disable" "ne" true }}{{ if .Permalink }}{{ .Permalink }}
-{{ end }}{{ end }}
