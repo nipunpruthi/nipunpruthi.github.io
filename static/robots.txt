@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.xml
+Allow: /sitemap.txt
 
 Sitemap: https://nipunpruthi.github.io/sitemap.xml
+Sitemap: https://nipunpruthi.github.io/sitemap.txt

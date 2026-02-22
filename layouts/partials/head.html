@@ -2,7 +2,8 @@
 <meta name="app-version" content="{{ $version }}">
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v={{ $version }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}">
+<link rel="sitemap" type="application/xml" title="Sitemap (XML)" href="{{ "sitemap.xml" | absURL }}">
+<link rel="sitemap" type="text/plain" title="Sitemap (text)" href="{{ "sitemap.txt" | absURL }}">
 {{- $siteName := .Site.Params.site_name | default .Site.Title }}
 <meta property="og:site_name" content="{{ $siteName }}">
 {{- /* Google Search result icon: 48x48 PNG. Absolute URL so crawlers fetch it reliably. */}}
