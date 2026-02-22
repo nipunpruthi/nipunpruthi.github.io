@@ -7,6 +7,7 @@
   {{ end }}
   <div class="timeline-wrap">
     <div class="timeline-line" id="timeline-line-page" aria-hidden="true">
+      <span class="timeline-line-glow" aria-hidden="true"></span>
       <span class="timeline-line-hover-dot" aria-hidden="true"></span>
     </div>
   <ol class="timeline">
@@ -66,14 +67,41 @@
     (function() {
       var line = document.getElementById('timeline-line-page');
       if (!line) return;
+      var wrap = line.closest('.timeline-wrap');
       var dot = line.querySelector('.timeline-line-hover-dot');
-      if (!dot) return;
-      line.addEventListener('mouseenter', function() { dot.classList.add('is-visible'); });
-      line.addEventListener('mouseleave', function() { dot.classList.remove('is-visible'); });
+      var glow = line.querySelector('.timeline-line-glow');
+      if (!wrap || !dot || !glow) return;
+      var markers = wrap.querySelectorAll('.timeline-marker');
+      function updateGlowSegment(cursorY) {
+        var lineRect = line.getBoundingClientRect();
+        var lineTop = lineRect.top;
+        var lineHeight = lineRect.height;
+        var above = 0;
+        var below = lineHeight;
+        for (var i = 0; i < markers.length; i++) {
+          var mr = markers[i].getBoundingClientRect();
+          var my = (mr.top + mr.bottom) / 2 - lineTop;
+          if (my <= cursorY && my > above) above = my;
+          if (my >= cursorY && my < below) below = my;
+        }
+        glow.style.top = above + 'px';
+        glow.style.height = (below - above) + 'px';
+      }
+      line.addEventListener('mouseenter', function(e) {
+        dot.classList.add('is-visible');
+        glow.classList.add('is-visible');
+        var rect = line.getBoundingClientRect();
+        updateGlowSegment(e.clientY - rect.top);
+      });
+      line.addEventListener('mouseleave', function() {
+        dot.classList.remove('is-visible');
+        glow.classList.remove('is-visible');
+      });
       line.addEventListener('mousemove', function(e) {
         var rect = line.getBoundingClientRect();
         var y = e.clientY - rect.top;
         dot.style.top = y + 'px';
+        updateGlowSegment(y);
       });
     })();
   </script>

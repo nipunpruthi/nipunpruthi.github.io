@@ -102,9 +102,10 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .page h1 { margin-bottom: 1rem; color: var(--text); }
 .experience-intro { margin-bottom: 2rem; color: var(--text-muted); }
 .timeline-wrap { display: flex; align-items: stretch; }
-.timeline-line { width: 10px; flex-shrink: 0; position: relative; border-left: 2px solid var(--border); transition: border-color 0.25s ease, box-shadow 0.25s ease; }
-.timeline-line:hover { border-left-color: var(--accent); box-shadow: -4px 0 16px 0 rgba(248, 81, 73, 0.35); }
-:root.light .timeline-line:hover { box-shadow: -4px 0 16px 0 rgba(194, 34, 34, 0.25); }
+.timeline-line { width: 10px; flex-shrink: 0; position: relative; border-left: 2px solid var(--border); }
+.timeline-line-glow { position: absolute; left: 0; top: 0; width: 2px; height: 0; background: var(--accent); box-shadow: -4px 0 16px 0 rgba(248, 81, 73, 0.35); opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+:root.light .timeline-line-glow { box-shadow: -4px 0 16px 0 rgba(194, 34, 34, 0.25); }
+.timeline-line-glow.is-visible { opacity: 1; }
 .timeline-line-hover-dot { position: absolute; left: 50%; transform: translate(-50%, -50%); width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px 2px var(--accent); opacity: 0; pointer-events: none; transition: opacity 0.15s ease; }
 .timeline-line-hover-dot.is-visible { opacity: 1; }
 .timeline { list-style: none; margin: 0; padding: 0; padding-left: 0; }
