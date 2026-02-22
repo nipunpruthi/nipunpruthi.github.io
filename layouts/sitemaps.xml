@@ -1,2 +1,0 @@
-{{- /* Same as sitemap.xml: sitemap index for GSC */ -}}
-{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <sitemap>\n    <loc>%ssitemap-pages.xml</loc>\n    <lastmod>%s</lastmod>\n  </sitemap>\n</sitemapindex>" .Site.BaseURL (now.UTC.Format "2006-01-02T15:04:05Z") | safeHTML -}}

@@ -5,23 +5,10 @@ title = "Nipun Pruthi"
 # GitHub Pages often uses branch "gh-pages" or "docs"; default publish is "public"
 publishDir = "public"
 
-# Enable RSS for section list pages (e.g. /blog/index.xml)
+# Enable RSS for section list pages (e.g. /blog/index.xml). Sitemap: Hugo default (single sitemap.xml urlset).
 [outputs]
-  home = ["HTML", "RSS", "sitemapindex", "sitemaps", "sitemappages"]
+  home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
-
-# Custom sitemap index at sitemap.xml (override built-in; GSC reads index when urlset fails)
-[outputFormats.sitemapindex]
-  baseName = "sitemap"
-  mediatype = "application/xml"
-
-[outputFormats.sitemaps]
-  baseName = "sitemaps"
-  mediatype = "application/xml"
-
-[outputFormats.sitemappages]
-  baseName = "sitemap-pages"
-  mediatype = "application/xml"
 
 [menu]
   [[menu.main]]
