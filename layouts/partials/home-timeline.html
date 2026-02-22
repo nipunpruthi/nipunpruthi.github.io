@@ -1,6 +1,10 @@
 {{ with .Site.Data.experience.entries }}
 <section class="home-section home-experience" id="experience">
   <h2 class="home-section-title">Experience</h2>
+  <div class="timeline-wrap">
+    <div class="timeline-line" id="timeline-line-home" aria-hidden="true">
+      <span class="timeline-line-hover-dot" aria-hidden="true"></span>
+    </div>
   <ol class="timeline">
     {{ range . }}
     {{ $e := . }}
@@ -53,5 +57,21 @@
     </li>
     {{ end }}
   </ol>
+  </div>
+  <script>
+    (function() {
+      var line = document.getElementById('timeline-line-home');
+      if (!line) return;
+      var dot = line.querySelector('.timeline-line-hover-dot');
+      if (!dot) return;
+      line.addEventListener('mouseenter', function() { dot.classList.add('is-visible'); });
+      line.addEventListener('mouseleave', function() { dot.classList.remove('is-visible'); });
+      line.addEventListener('mousemove', function(e) {
+        var rect = line.getBoundingClientRect();
+        var y = e.clientY - rect.top;
+        dot.style.top = y + 'px';
+      });
+    })();
+  </script>
 </section>
 {{ end }}

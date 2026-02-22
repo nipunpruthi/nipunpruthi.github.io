@@ -101,10 +101,17 @@ main { max-width: 960px; margin: 0 auto; padding: 2rem; }
 .page { margin: 2rem 0; }
 .page h1 { margin-bottom: 1rem; color: var(--text); }
 .experience-intro { margin-bottom: 2rem; color: var(--text-muted); }
-.timeline { list-style: none; margin: 0; padding: 0; padding-left: 1.5rem; border-left: 2px solid var(--border); }
+.timeline-wrap { display: flex; align-items: stretch; }
+.timeline-line { width: 10px; flex-shrink: 0; position: relative; border-left: 2px solid var(--border); transition: border-color 0.25s ease, box-shadow 0.25s ease; }
+.timeline-line:hover { border-left-color: var(--accent); box-shadow: -4px 0 16px 0 rgba(248, 81, 73, 0.35); }
+:root.light .timeline-line:hover { box-shadow: -4px 0 16px 0 rgba(194, 34, 34, 0.25); }
+.timeline-line-hover-dot { position: absolute; left: 50%; transform: translate(-50%, -50%); width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px 2px var(--accent); opacity: 0; pointer-events: none; transition: opacity 0.15s ease; }
+.timeline-line-hover-dot.is-visible { opacity: 1; }
+.timeline { list-style: none; margin: 0; padding: 0; padding-left: 0; }
 .timeline-item { position: relative; padding-bottom: 2rem; }
 .timeline-item:last-child { padding-bottom: 0; }
-.timeline-marker { position: absolute; left: -1.5rem; top: 0.25rem; width: 12px; height: 12px; margin-left: -6px; background: var(--accent); border-radius: 50%; }
+.timeline-marker { position: absolute; left: -11px; top: 0.25rem; width: 12px; height: 12px; margin-left: -6px; background: var(--accent); border-radius: 50%; transition: box-shadow 0.25s ease, transform 0.2s ease; }
+.timeline-item:hover .timeline-marker { box-shadow: 0 0 0 2px var(--bg), 0 0 14px 4px var(--accent); transform: scale(1.2); }
 .timeline-content { margin-left: 0.5rem; }
 .timeline-head-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.25rem; }
 .timeline-head-left { display: flex; align-items: center; gap: 0.5rem; min-width: 0; }
