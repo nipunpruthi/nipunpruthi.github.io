@@ -191,6 +191,10 @@ details[open] .timeline-details-summary::before { content: "▲ "; }
 .post-content { color: var(--text); }
 .post-content p { margin: 0 0 1rem; }
 .post-content p:last-child { margin-bottom: 0; }
+.post-content a,
+.post-content a:visited { color: var(--link); }
+.post-content a:hover,
+.post-content a:focus { color: var(--link); text-decoration: underline; }
 
 /* Tag filter and taxonomy */
 .tag-filter { margin-bottom: 1.5rem; padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
