@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">JWT Banner</title>
+  <desc id="desc">JWT text on a gradient background</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g opacity="0.15">
+    <circle cx="180" cy="140" r="90" fill="#93c5fd"/>
+    <circle cx="1050" cy="520" r="120" fill="#67e8f9"/>
+    <circle cx="980" cy="120" r="55" fill="#c4b5fd"/>
+  </g>
+
+  <rect x="180" y="185" width="840" height="260" rx="28" fill="#0b1220" stroke="#334155" stroke-width="2"/>
+
+  <rect x="220" y="225" width="140" height="180" rx="16" fill="#111827" stroke="#334155"/>
+  <rect x="380" y="225" width="440" height="180" rx="16" fill="#111827" stroke="#334155"/>
+  <rect x="840" y="225" width="140" height="180" rx="16" fill="#111827" stroke="#334155"/>
+
+  <text x="290" y="332" text-anchor="middle" fill="#e2e8f0" font-size="30" font-family="Arial, Helvetica, sans-serif">header</text>
+  <text x="600" y="332" text-anchor="middle" fill="#e2e8f0" font-size="30" font-family="Arial, Helvetica, sans-serif">payload</text>
+  <text x="910" y="332" text-anchor="middle" fill="#e2e8f0" font-size="30" font-family="Arial, Helvetica, sans-serif">signature</text>
+
+  <text x="600" y="132" text-anchor="middle" fill="#e2e8f0" font-size="96" font-weight="700" font-family="Arial, Helvetica, sans-serif">JWT</text>
+
+  <rect x="466" y="475" width="268" height="58" rx="29" fill="url(#chip)"/>
+  <text x="600" y="513" text-anchor="middle" fill="#0f172a" font-size="28" font-weight="700" font-family="Arial, Helvetica, sans-serif">Token Basics</text>
+</svg>

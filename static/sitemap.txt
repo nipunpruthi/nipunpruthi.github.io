@@ -6,6 +6,7 @@ https://nipunpruthi.github.io/blog/first-steps-with-hugo/
 https://nipunpruthi.github.io/blog/simple-cicd-for-static-sites/
 https://nipunpruthi.github.io/blog/why-markdown-for-content/
 https://nipunpruthi.github.io/blog/keeping-a-reading-list/
+https://nipunpruthi.github.io/blog/jwt-core-explained/
 https://nipunpruthi.github.io/work-with-me/
 https://nipunpruthi.github.io/papershelf/
 https://nipunpruthi.github.io/tags/
