@@ -15,6 +15,20 @@ This post focuses on the **core JWT technology** and practical usage.
 
 ![JWT banner](./jwt-banner.svg)
 
+## Table of contents
+
+- [What is JWT?](#what-is-jwt)
+- [Key points to remember](#key-points-to-remember)
+- [JWT types (by signing style)](#jwt-types-by-signing-style)
+  - [1) Symmetric JWT (HS256)](#1-symmetric-jwt-hs256)
+  - [2) Asymmetric JWT (RS256)](#2-asymmetric-jwt-rs256)
+- [Minimal JWT flow](#minimal-jwt-flow)
+- [Python sample: Symmetric JWT (HS256)](#python-sample-symmetric-jwt-hs256)
+- [Python sample: Asymmetric JWT (RS256)](#python-sample-asymmetric-jwt-rs256)
+- [When to use JWT](#when-to-use-jwt)
+- [Practical recommendation](#practical-recommendation)
+- [Final takeaways](#final-takeaways)
+
 ## What is JWT?
 
 JWT is a signed token with this structure:
