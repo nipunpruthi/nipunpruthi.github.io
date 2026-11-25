@@ -1,11 +1,11 @@
 ---
 title: About Me
-description: "About Nipun Pruthi — Senior Software Engineer at ixigo. Backend, system design, AI. Always up for a chat over green tea."
+description: "About Nipun Pruthi — Senior Software Engineer, ex-ixigo. Backend, system design, cloud, AI. Always up for a chat over green tea."
 # Optional: add a profile image (path relative to static/, e.g. img/me.jpg)
 # image: img/me.jpg
 ---
 
-I'm a **Senior Software Engineer** at [ixigo](https://www.ixigo.com), and I love building backend systems that scale and stay reliable.
+I'm a **Senior Software Engineer**, most recently at [ixigo](https://www.ixigo.com), and I love building backend systems that scale and stay reliable.
 
 I did my B.Tech in Electronics and Communication Engineering from [IIT Roorkee](https://www.iitr.ac.in). Since then I've worked on high-throughput services, APIs, and event-driven systems—system design, relational and NoSQL databases, message queues, caching, and cloud infrastructure. I like to keep the big picture clear: good design, observability, and shipping things that actually work.
 

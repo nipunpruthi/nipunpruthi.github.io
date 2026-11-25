@@ -24,7 +24,7 @@ I'm **Nipun Pruthi**, a **Senior Software Engineer** and **backend engineer** wh
 
 - **0→1 and scale** — Built and scaled systems from scratch (e.g. 20M+ daily requests); improved conversion and time-to-market; reduced manual ops and prevented production downtime.
 - **Ownership** — Led design, delivery, and cross-functional pods; zero-downtime releases and full lineage for critical flows.
-- **Background** — IIT Roorkee (B.Tech). Experience at ixigo (Senior Software Engineer), Tide, Flipkart, Texas Instruments.
+- **Background** — IIT Roorkee (B.Tech). Experience at ixigo (Senior Software Engineer, until April 2026), Tide, Flipkart, Texas Instruments.
 
 ---
 

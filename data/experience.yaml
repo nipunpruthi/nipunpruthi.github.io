@@ -7,7 +7,7 @@ entries:
     location: "Gurgaon, India"
     icon: "img/companies/ixigo.png"
     start: "August '24"
-    end: "Present"
+    end: "April '26"
     description: "Designed and built systems end-to-end: MoneyOS (coupon lifecycle platform) and Ixi-Sense (clickstream & cohort). Service owner for high-throughput coupon engine and real-time personalisation; leads cross-functional delivery."
     tech: ["Java", "Spring Boot", "MySQL", "PostgreSQL", "Redis", "Kafka", "AWS", "ClickHouse", "Kubernetes", "JDBI", "Flyway", "Prometheus", "Resilience4j"]
     more:
